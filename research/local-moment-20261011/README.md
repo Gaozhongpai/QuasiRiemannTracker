@@ -19,6 +19,15 @@ The conditional endpoint audit checks 18 upper-row rectangles, six incumbent
 rectangles below the local window and the lower row endpoint. These tests
 certify their finite/scalar statements, not the new analytic theorem.
 
+## Compiled source components
+
+Eight [Lean source components](research/framework/programs/fixed_strip/verification/local_moment_source_2026-10-11/README.md) now compile
+with the pinned Lean 4.34.1 executable. Twelve axiom checks report only the
+standard axioms. This includes uniform small-window and exponent constants
+and the unmarked witness partition. Imported dependencies were reused; the
+full physical theorem and canonical checks remain pending. The source,
+compile logs, hashes and a separate component replay script are included.
+
 ## Reproduce
 
 Requires Python 3 and SymPy 1.14.0. The commands fetch only a pinned paper

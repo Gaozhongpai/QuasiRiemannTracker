@@ -18,5 +18,11 @@
     "tracker": "3177804dd05e3f59bce9ec54652175b978477d4f",
     "cycle25": "58344dfdbe756cf2f743da1908ffe0582418cf5b",
     "openai_math": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
-  }
+  },
+  "compiled_source_components": 8,
+  "component_axiom_checks": 12,
+  "component_compiler": "Lean 4.34.1",
+  "component_checks_passed": true,
+  "component_dependency_rebuild": false,
+  "component_evidence": "research/framework/programs/fixed_strip/verification/local_moment_source_2026-10-11/evidence/component-replay.json"
 }
