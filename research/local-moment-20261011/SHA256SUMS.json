@@ -1,0 +1,18 @@
+{
+  "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "NOTICE.md": "44d1fda52930b43fa570ca59b328463a7ad6449d7aa6daf16f4c40affe0a6005",
+  "README.md": "f06340d7d1fe38025350730be81c48bfe5a9f99b030aa4c3ce19e2a5900d1872",
+  "STATUS.json": "738925626e04a561e00ebce4b63e91f15f7927d71150fd3db99f8c8d914b1b81",
+  "UPSTREAM_NOTICE.md": "25f9d8091a2defb6d7719066a23084c64147ac0902ee42203057bbb7981e5197",
+  "reproduce.py": "d9e7553b5ddf41db7fd4f8a689f0b3affa20e0e83e1063e111c2b419314a94c5",
+  "research/framework/programs/fixed_strip/candidates/JOINT_HIGH_ZERO_SQUARED_LABEL_PAYMENT.md": "0c483d1f620db208d0e42bb50a58477ca81a6e47d40c78ea5f3b48d3541cbd75",
+  "research/framework/programs/fixed_strip/candidates/LOCAL_MOMENT_TRACKER_REFINEMENT.md": "d2558fb86540a14d1f22b02b6a4ac251f701164b2ba78327b3dc907ec39d420c",
+  "research/framework/programs/fixed_strip/candidates/LOCAL_PHYSICAL_MOMENT_EXTENSION.md": "21d944ec3d89ac7fe818e53062d744d06855260e54b9f2813827fa2b83496f0d",
+  "research/numerics/results/local_moment_endpoint_audit.json": "a1ae6a6592cbe56695acc2c85749ba4f5ece08f5ae0c573fe18118e847a7b168",
+  "research/numerics/results/local_physical_moment_audit.json": "7493c2385e395e452afd1b55dc778f2c18d2738159b4ccfc69bacab82eb210c0",
+  "research/tools/cubic_theta_squareclass_covariance_audit.py": "b846334b7977a3b7e96da640937c2473b111066637dab1974af521f73d07338d",
+  "research/tools/local_moment_endpoint_audit.py": "721690137db17e4e0089960a1b13a1bf1671f9ce5383a28aba6df62ac5c85d82",
+  "research/tools/local_physical_moment_audit.py": "75521b3922b8ec2c5eaea544f28eb9c288dbe2f2c54fac9d328fe9b21e3fd4ef",
+  "research/tools/tracker_weighted_numerator_audit.py": "625a7874f9cc3dfdba26d062dcedee2d82ffebc8c27d1dff43d829ff60ee2837",
+  "upstream-source.json": "072d6cfb60c223297291a33bac4e70104b42aa1216b74eae42203e1579593b9a"
+}
