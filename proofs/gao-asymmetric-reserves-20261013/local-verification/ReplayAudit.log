@@ -1,0 +1,5 @@
+'Candidate.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Submission20261012.Global.beta_le_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Submission20261012.Global.hecke_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Submission20261012.Global.dirichlet_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Submission20261012.Global.zeta_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

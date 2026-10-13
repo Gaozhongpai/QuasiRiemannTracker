@@ -2,47 +2,58 @@
   "schema": "gao-submission-verification-status-v1",
   "result_id": "gao-asymmetric-reserves-20261013",
   "theta_exact": "8748673/10000000",
-  "status": "candidate-verification-in-progress",
+  "status": "PASS_LOCAL_FULL_PROOF",
   "record_admitted": false,
-  "as_of": "2026-10-13T15:49:28.246534+00:00",
+  "verified_at": "2026-10-13T16:21:28.885891+00:00",
   "source_pin_sha256": "0b7e783fd6a60d098ebe094d1383d2db762d796c3ed3b27da0a272722481fb2f",
   "source_files": 128,
   "source_bytes": 6715524,
-  "component_checks": {
-    "geometry_arithmetic_targets": 18,
-    "reserve_transport_targets": 9,
-    "status": "PASS_COMPONENTS_ONLY",
-    "axioms": [
-      "propext",
-      "Classical.choice",
-      "Quot.sound"
-    ],
-    "scope": "Focused Lean checks of extracted mathematical bodies; not a substitute for the complete canonical theorem replay."
-  },
+  "source_commit": "c5235c0c4b21e548a86b0c616fb295e2c3a00441",
+  "pr_head_source_identical": "82da425c8f8da008de063eaebe1c8d33e9c33f21",
+  "pr_url": "https://github.com/GTimG/QuasiRiemannTracker/pull/41",
   "full_source_replay": {
-    "status": "RUNNING",
-    "summary": {
-      "cache_hits": 8,
-      "failed": 0,
-      "passed": 96,
-      "passed_with_inherited_warnings": 65,
-      "pending": 31,
-      "running": 1
-    },
-    "scope": "All 128 Candidate modules and final all-moduli Dirichlet, zeta, Hecke and zero-bound axioms."
+    "status": "PASS",
+    "modules": 128,
+    "verified_cache_reuses": 8,
+    "final_axiom_targets": 5,
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "unexpected_axioms": [],
+    "report_sha256": "f1defdbdf653765783c079dd7eff685a1328e7ffa09c0cca5f86284aba90749b"
   },
   "independent_verification": {
-    "status": "PENDING_FULL_SOURCE_REPLAY",
-    "methods": [
-      "Comparator",
-      "Lean",
-      "NanoDa",
+    "status": "PASS",
+    "canonical_standard_target_matched": true,
+    "targets": [
+      "QRH.canonical_bound",
+      "QRH.zeta_bound",
+      "QRH.hecke_bound"
+    ],
+    "definition_holes": [],
+    "kernels": [
+      "Lean default",
+      "nanoda",
       "con-ron"
     ],
-    "scope": "Fresh protected canonical/all-family challenge at 8748673/10000000; no result from another endpoint is reused."
+    "exit_codes": {
+      "comparator-lean": 0,
+      "con-ron": 0,
+      "nanoda": 0
+    },
+    "result_sha256": "1b6ec4842c7ca4e7fadd8c5a24e9c239bc5278805d59ebf79f79fabeb97c2163",
+    "solution_export_sha256": "9a5db474cff79b63ddd3db2757882480d0c6f7be06265112322b2bcea52f9a4b",
+    "challenge_export_sha256": "20997ea2ea86a73ca2fb94cf4ae277d52b4f2f944a93935a28a9348becd70e8e",
+    "scope": "Local independent Comparator, Lean default, NanoDa and con-ron verification of the exact all-Dirichlet, zeta and finite-order Eisenstein Hecke targets; real outer Docker confinement. Not hosted standard PR admission.",
+    "actual_outer_docker_confinement": true,
+    "hosted_standard_admission": false
   },
   "tracker_admission": {
     "status": "PENDING",
     "requires": "Successful hosted verification for the exact PR head and maintainer merge."
-  }
+  },
+  "evidence_location": "local-verification/",
+  "publication_note": "Receipts published separately to preserve the active PR verification run. All 128 proof sources remain identical to PR 41."
 }

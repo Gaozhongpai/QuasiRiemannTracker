@@ -1,0 +1,44 @@
+{
+  "schema": "public-sync-tree-identity-verification-v1",
+  "status": "PASS_PUBLIC_SYNC_CONTENT",
+  "checked_at": "2026-10-13T16:02:06.619929+00:00",
+  "scope": "Read-only public merge ancestry, complete tree differences and unchanged previously byte-verified source/document Git blobs. No files redownloaded and no mathematical replay or hosted admission performed.",
+  "repository": "Gaozhongpai/QuasiRiemannTracker",
+  "branch": "gao-asymmetric-reserves-8748673-20261013",
+  "commit": "82da425c8f8da008de063eaebe1c8d33e9c33f21",
+  "tree": "e9de8f6de4efdd05f3f0ecb88a51e9684d31b0f5",
+  "parents": [
+    "c5235c0c4b21e548a86b0c616fb295e2c3a00441",
+    "8e59e191f0135124eba8454c251d74406cd01e39"
+  ],
+  "initial_upload_receipt": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/publication/public-upload-verification.json",
+  "initial_upload_receipt_sha256": "92b98a78165e9bc467978c3c92fa272efab07e6d789a75b09100610f55912f89",
+  "initial_receipt_preserved": true,
+  "sync_delta_from_initial_upload": {
+    "added_files": [],
+    "modified_files": [
+      "tests/browser/dashboard.spec.ts"
+    ],
+    "removed_files": [],
+    "sole_modified_file_matches_upstream_main_blob": true
+  },
+  "unchanged_uploaded_files": 137,
+  "unchanged_lean_modules": 128,
+  "unchanged_documents": 9,
+  "all_prior_public_git_blobs_and_lengths_unchanged": true,
+  "canonical_bound_preserved_by_exact_main_blob": true,
+  "theta_exact": "8748673/10000000",
+  "pull_request": {
+    "number": 41,
+    "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/41",
+    "state": "open",
+    "head_sha": "82da425c8f8da008de063eaebe1c8d33e9c33f21",
+    "base_sha": "8e59e191f0135124eba8454c251d74406cd01e39",
+    "ahead_by": 2,
+    "behind_by": 0,
+    "changed_files": 137,
+    "all_changed_files_are_original137_additions": true
+  },
+  "mathematical_verification_performed": false,
+  "hosted_admission_verified": false
+}
