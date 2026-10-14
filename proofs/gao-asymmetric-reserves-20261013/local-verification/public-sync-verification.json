@@ -11,7 +11,7 @@
     "c5235c0c4b21e548a86b0c616fb295e2c3a00441",
     "8e59e191f0135124eba8454c251d74406cd01e39"
   ],
-  "initial_upload_receipt": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/publication/public-upload-verification.json",
+  "initial_upload_receipt": "${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/publication/public-upload-verification.json",
   "initial_upload_receipt_sha256": "92b98a78165e9bc467978c3c92fa272efab07e6d789a75b09100610f55912f89",
   "initial_receipt_preserved": true,
   "sync_delta_from_initial_upload": {

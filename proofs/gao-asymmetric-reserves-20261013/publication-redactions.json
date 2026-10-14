@@ -1,0 +1,62 @@
+{
+  "schema": "proof-publication-redactions-v1",
+  "original_published_commit": "fda45ebb4029700c8ff2f20e3a748ff245cc3b1d",
+  "proof_sources_changed": false,
+  "protected_verifier_files_changed": false,
+  "no_Lean_or_kernel_rerun": true,
+  "source_archives_changed": false,
+  "files": [
+    {
+      "path": "local-verification/independent-result.json",
+      "original_sha256": "1b6ec4842c7ca4e7fadd8c5a24e9c239bc5278805d59ebf79f79fabeb97c2163",
+      "published_sha256": "de0ebab5a3165c413cc20d8d7adb5918c6b8fd6f1d222d251de66be5d4e6d04a",
+      "original_git_blob": "87a3fbd8122f178b2da4e1813357032f7e480eae",
+      "published_git_blob": "61cf201cd8730782d2900a109b5df8900ea77393",
+      "transformation": "private_machine_location_redaction_only",
+      "recorded_verification_hashes_unchanged": true,
+      "disclosure_occurrences_removed": 21
+    },
+    {
+      "path": "local-verification/public-source-final-binding.json",
+      "original_sha256": "82e558b7336808de6a8068e499aa7239ab55e51010ad2ed8785af1af1fc24ce2",
+      "published_sha256": "bc901eb647de77ddfd25e65269a40e28e1a51e276a2b91c7ad66dab614b54359",
+      "original_git_blob": "5903bffbe2d98fb21a83c43076d898348b53b412",
+      "published_git_blob": "74074979c4950031bfd29144e20f807ae3c0b0f5",
+      "transformation": "private_machine_location_redaction_only",
+      "recorded_verification_hashes_unchanged": true,
+      "disclosure_occurrences_removed": 1
+    },
+    {
+      "path": "local-verification/public-sync-verification.json",
+      "original_sha256": "44c1d378ccfaa52c3e75cbd80662a953472e8e366027a98cd687588c610c1c5c",
+      "published_sha256": "fe30292edc1c862290938b4bab03b0c57595efae7685d590aa3435d3581710fc",
+      "original_git_blob": "853ac7f21778504543c9702d396ae3cd6b1aaf68",
+      "published_git_blob": "5c17fe585f5d4267a6174bba629b16b451a4ea80",
+      "transformation": "private_machine_location_redaction_only",
+      "recorded_verification_hashes_unchanged": true,
+      "disclosure_occurrences_removed": 1
+    },
+    {
+      "path": "local-verification/replay-report.json.gz",
+      "original_sha256": "b1381e66f909cb5baa6da7290a447f672f0a4a7141210dd0ee3b4e11f567b57f",
+      "published_sha256": "f9a0e59e170507fd41a66dd89c2dd9b9d4c109d201c31c8ab138b575e2b24990",
+      "original_git_blob": "78d4614400dffefc9ce10e79e003120c0671ea33",
+      "published_git_blob": "4a4ecf748e0100fc4746494a468b955ff54ed9ec",
+      "transformation": "private_machine_location_redaction_only",
+      "recorded_verification_hashes_unchanged": true,
+      "disclosure_occurrences_removed": 2307,
+      "container": "gzip",
+      "member": "replay-report.json",
+      "original_member_sha256": "f1defdbdf653765783c079dd7eff685a1328e7ffa09c0cca5f86284aba90749b",
+      "published_member_sha256": "c86ab0a82e729d66830163dc82db922ba95690331389375c8de7b1e6e541e94f",
+      "compression": {
+        "level": 9,
+        "mtime": 0,
+        "filename_header": false
+      }
+    }
+  ],
+  "scope": "Publication derivatives of historical evidence. Private machine locations are removed from text and compressed receipt contents; proof sources, original recorded hash values and verification results remain unchanged. No proof run for this metadata revision is claimed.",
+  "compressed_receipt_redaction_base_commit": "fda45ebb4029700c8ff2f20e3a748ff245cc3b1d",
+  "compressed_receipt_archives_changed": true
+}

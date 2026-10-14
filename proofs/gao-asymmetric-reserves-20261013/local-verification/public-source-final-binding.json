@@ -1176,7 +1176,7 @@
   ],
   "hosted_standard_admission": false,
   "initial_public_commit": "c5235c0c4b21e548a86b0c616fb295e2c3a00441",
-  "local_independent_result": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/result.json",
+  "local_independent_result": "${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/result.json",
   "local_independent_result_sha256": "1b6ec4842c7ca4e7fadd8c5a24e9c239bc5278805d59ebf79f79fabeb97c2163",
   "pull_request": "https://github.com/GTimG/QuasiRiemannTracker/pull/41",
   "repository": "Gaozhongpai/QuasiRiemannTracker",

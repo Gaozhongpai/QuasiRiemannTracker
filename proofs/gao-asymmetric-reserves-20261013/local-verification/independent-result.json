@@ -270,7 +270,7 @@
     },
     "report_sha256": "f1defdbdf653765783c079dd7eff685a1328e7ffa09c0cca5f86284aba90749b"
   },
-  "candidate_report": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/replay-candidate-8748673/replay-report.json",
+  "candidate_report": "${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/replay-candidate-8748673/replay-report.json",
   "canonical_standard_target_matched": true,
   "challenge_export_sha256": "20997ea2ea86a73ca2fb94cf4ae277d52b4f2f944a93935a28a9348becd70e8e",
   "controls_sha256": "14f8afd099431f660008cce903320ff99d5abcb55e941f9aed84bdad84017ce4",
@@ -320,13 +320,13 @@
         "--name",
         "local44-verification-62b6775eb562437b9b64b1e3864a256f",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux,dst=/toolchain,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux,dst=/toolchain,readonly",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/exports/Solution.export,dst=/Solution.export,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/exports/Solution.export,dst=/Solution.export,readonly",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/comparator-lean.json,dst=/config.json,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/comparator-lean.json,dst=/config.json,readonly",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/exports/Challenge.export,dst=/Challenge.export,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/exports/Challenge.export,dst=/Challenge.export,readonly",
         "--mount",
         "type=bind,src=/usr/bin/git,dst=/usr/bin/git,readonly",
         "-e",
@@ -345,7 +345,7 @@
       "container": "local44-verification-62b6775eb562437b9b64b1e3864a256f",
       "exit_code": 0,
       "failure": null,
-      "log": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/logs/comparator-lean.log",
+      "log": "${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/logs/comparator-lean.log",
       "log_sha256": "44185e931f2fc8b47a320483e3fea92b5edc0288cf80f976547fd712815368a4",
       "phase": "comparator-lean",
       "seconds": 748.335
@@ -387,9 +387,9 @@
         "--name",
         "local44-verification-ec9783dbd2ee4d35aa95d698b6249883",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux,dst=/toolchain,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux,dst=/toolchain,readonly",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/exports/Solution.export,dst=/Solution.export,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/exports/Solution.export,dst=/Solution.export,readonly",
         "-e",
         "PATH=/toolchain/bin:/usr/local/bin:/usr/bin:/bin",
         "python@sha256:5024f48ba9441d4b13a95d3945abc6365538e3a31109833367a1923523c6efed",
@@ -400,7 +400,7 @@
       "container": "local44-verification-ec9783dbd2ee4d35aa95d698b6249883",
       "exit_code": 0,
       "failure": null,
-      "log": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/logs/con-ron.log",
+      "log": "${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/logs/con-ron.log",
       "log_sha256": "b9350761582175fb7d21b4742c36c1a06f9549da7edc4f8b72c23d700c9e298e",
       "phase": "con-ron",
       "seconds": 377.118
@@ -442,11 +442,11 @@
         "--name",
         "local44-verification-71a0e8a388814dc0b19d389e8ebc2244",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux,dst=/toolchain,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux,dst=/toolchain,readonly",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/exports/Solution.export,dst=/Solution.export,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/exports/Solution.export,dst=/Solution.export,readonly",
         "--mount",
-        "type=bind,src=/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/nanoda.json,dst=/config.json,readonly",
+        "type=bind,src=${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/nanoda.json,dst=/config.json,readonly",
         "-e",
         "PATH=/toolchain/bin:/usr/local/bin:/usr/bin:/bin",
         "python@sha256:5024f48ba9441d4b13a95d3945abc6365538e3a31109833367a1923523c6efed",
@@ -456,7 +456,7 @@
       "container": "local44-verification-71a0e8a388814dc0b19d389e8ebc2244",
       "exit_code": 0,
       "failure": null,
-      "log": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/logs/nanoda.log",
+      "log": "${RH_REPOSITORY_ROOT}/build/affine_record_extension_2026-10-13/verification/candidate-8748673-independent/logs/nanoda.log",
       "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "phase": "nanoda",
       "seconds": 108.458
@@ -482,35 +482,35 @@
   "theta_exact": "8748673/10000000",
   "tools": {
     "exporter": {
-      "path": "/mnt/uNeon/zhongpai/lean/work/openai_math_7_8_check_2026-10-06/openai-math-tooling/lean4export/.lake/build/bin/lean4export",
+      "path": "${RH_OPENAI_MATH_TOOLING}/lean4export/.lake/build/bin/lean4export",
       "sha256": "8c5d64ba68f4d3a68b3bcb7e1c5f188e35ae573b29470b8d4530a62324c9ddd1"
     },
     "judge_con-ron": {
-      "path": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/con-ron",
+      "path": "${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/con-ron",
       "sha256": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef"
     },
     "judge_lake": {
-      "path": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/lake",
+      "path": "${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/lake",
       "sha256": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1"
     },
     "judge_lean": {
-      "path": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/lean",
+      "path": "${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/lean",
       "sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38"
     },
     "judge_leanchecker": {
-      "path": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/leanchecker",
+      "path": "${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/leanchecker",
       "sha256": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29"
     },
     "judge_leanexport": {
-      "path": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/leanexport",
+      "path": "${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/leanexport",
       "sha256": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954"
     },
     "judge_nanoda_bin": {
-      "path": "/mnt/UIIUSA/zhongpai/code/llm/RH/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/nanoda_bin",
+      "path": "${RH_REPOSITORY_ROOT}/build/tracker_weighted_numerator_2026-10-10/runtime/lean-4.35.0-rc2-linux/bin/nanoda_bin",
       "sha256": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
     },
     "source_lean": {
-      "path": "/mnt/uNeon/zhongpai/lean/work/openai_math_7_8_check_2026-10-06/openai-math-tooling/lean-4.34.1-linux/bin/lean",
+      "path": "${RH_OPENAI_MATH_TOOLING}/lean-4.34.1-linux/bin/lean",
       "sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
     }
   },
