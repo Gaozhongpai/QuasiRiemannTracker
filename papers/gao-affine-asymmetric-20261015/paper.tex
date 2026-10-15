@@ -1,0 +1,329 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=19mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+\newcommand{\tht}{\vartheta}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\EE}{\mathcal E}
+\newcommand{\Raff}{R_{\rm aff}}
+\newcommand{\Rold}{R_{\kappa}}
+\newcommand{\Reg}{\mathcal R}
+\newtheorem{lemma}{Lemma}
+\title{Affine detector counting with asymmetric source savings}
+\author{Zhongpai Gao\\\small With AI assistance; predecessor contributions acknowledged below}
+\date{14 October 2026}
+\begin{document}
+\maketitle
+\vspace{-2.5em}
+\begin{center}\small\textbf{Canonical proof checked locally; tracker admission pending.}\end{center}
+\begin{abstract}
+We prove nonvanishing of every Dirichlet
+$L$-function in $\Re s>21871/25000=0.874840$, away from the principal pole.
+The construction combines timbalud's asymmetric marked HIGH count and
+common-radical saving with DaysSky's use of Collet's initial affine moment
+inside the detector count. The stronger source moment increases the detector's
+available prime-slot width. A small change of the height junction preserves
+the actual source gates. We give the counting formulas, the allocation
+argument, and the passage from uniform scalar inequalities to the inherited
+analytic continuation argument. Exact rational certificates cover the continuous parameter ranges, and the
+complete source assembly has passed canonical comparison and all three kernels.
+\end{abstract}
+
+\section{Framework and theorem}
+Let $\beta\leq7/8$ be the supremum of the nontrivial zero real parts in
+Cycle61's closed Gaussian Hecke family. The upper bound and the transfer from
+this family to all Dirichlet characters are inherited from the OpenAI and
+Collet framework \cite{collet,openai}. Set
+\begin{gather}
+ \tht=\frac{21871}{25000},\quad h=\frac{1989}{2500},\quad
+ d_-=\frac{159}{200},\quad d_+=h+10^{-10},\quad
+ \kappa_*=2\tht-1=\frac{9371}{12500},\label{parameters}\\
+ \ell=\frac{11}{3}-4\tht=\frac{3137}{18750},\quad
+ x=1+\ell-h=\frac{13939}{37500},\quad
+ y=h-2\ell=\frac{17287}{37500},\quad
+ \lambda=\frac{19312}{4787},\quad
+ B=\frac{14200}{14361}+\frac7{10000}.\nonumber
+\end{gather}
+\textbf{Theorem.} For every modulus $q\geq1$, every Dirichlet character
+$\chi$ modulo $q$, and every $s\in\mathbb C$,
+\[
+ \tht<\Re s,\qquad \neg(\chi=1\ \text{and}\ s=1)
+ \quad\Longrightarrow\quad L(\chi,s)\ne0.
+\]
+The accompanying Lean construction proves this canonical statement.
+
+Assume $\beta>\tht$, keeping $\beta$ as the global supremum. The continuation
+contract first chooses a common error reserve $\sigma>0$ and
+$\omega=(\beta-\tht)/2$, before quantifying over primitive targets.
+Constants and a small height exponent may depend on the target character;
+the resulting positive continuation gap must remain uniform. This order
+is essential when the affine moment is applied to detector characters.
+
+\section{A stronger actual source moment}
+Collet's initial affine moment bounds the normalized plain energy, including
+its selected prime factors, by
+\begin{equation}
+ \EE_\eta(U;m,s)\ll_{\eta,\varepsilon}
+ (1+T)^{D_\eta}\,\mathcal S(\Phi)^2 U^{1+\varepsilon},
+ \qquad 2m+\lambda s\leq B.\label{affine-moment}
+\end{equation}
+Here $m$ is the plain length, $s$ the selected logarithmic prime width,
+$T$ controls the shifts, and $\mathcal S$ is a finite profile seminorm.
+All fixed masks, relative characters and source normalizations are those of
+the actual initial moment. We use \eqref{affine-moment} only in its proved
+window, with $s\leq1/25$ and $m$ in the interval specified in Section~\ref{sec:detector}.
+
+The admissible choice of $B$ is justified by the complete marked source
+argument of timbalud \cite{asymmetric}, not by an additional moment hypothesis.
+The useful common-allocation step can be seen directly. For first-allocation
+coordinates $c,d$, radical coordinate $R$, cancellation coordinate $R_0$ and
+retained width $L_c$, the actual source contains
+\begin{equation}
+ F=(1-\rho)(c-d)_+-\delta c-(1+\rho)R-E
+       -\frac{(3c-5d-R)_+}{6}+\rho L_c+R_0.\label{common-word}
+\end{equation}
+The radical penalty is tied to the same $c,d,R$; it cannot be discarded and
+then varied independently. Under the literal gates
+$R\leq\min(c,d)$, $L_c\leq5(R-R_0)$, $E,R_0,c,d\geq0$ and
+$1/4\leq\rho\leq2/5$, one has
+\begin{equation}
+ F\leq-(\delta-3\rho/2)c-E.\label{coupled}
+\end{equation}
+Indeed, for $d\leq c$, write $a=2-5\rho\in[0,1]$ and use
+$a d+(c/2-d)_+\geq ac/2$. For $c\leq d$, use $R\leq c$ and
+$1-5\rho/2\geq0$. These two cases give \eqref{coupled} on the whole domain.
+
+In the marked HIGH range $17/25\leq\delta\leq7/10$,
+$\rho=1-10\delta/[3(5-2\delta)]\leq103/273$; thus the first removed
+width has rate at least $a_0=519/4550$. The second allocation has the
+stronger direct rate $\delta$. With $M$ the source scale, let $u,f,v\geq0$
+be the common, residual frozen and surviving widths, and let $Q$ be the
+actual remaining frequency scale. The source identities and two-stage
+collision accounting give
+\[
+ u+f+v\geq\frac{33M}{1000},\qquad
+ Q\geq\frac{1121M}{1250}-2u.
+\]
+Asymmetric inverse/plain selections supply the live-width payment, so that
+\begin{equation}
+ a_0u+\delta f+\frac{224}{1755}\min\!\left(v,\frac{13Q}{400}\right)
+ \ \geq\ \frac{37M}{10000}.\label{ledger}
+\end{equation}
+For $v\leq13Q/400$, use the width supply and the smallest of the three
+rates. In the other case insert the lower bound for $Q$; the coefficient
+of $u$ remains positive and the constant term already exceeds the right
+side. This proves \eqref{ledger} without choosing an allocation extremizer.
+The complementary large sixth-power tail is paid by its inherited bound.
+Charging at most $M/20000$ leaves $73M/20000$. These savings are retained
+inside the actual source moment, with moving common ideals, frozen
+coefficients and encoded-frequency collisions unchanged.
+
+\section{Applying that moment inside the detector}\label{sec:detector}
+A detector fiber has inverse length $r$, plain length $m$, cutoff $t$,
+zero density $\delta$ and normalized prime amplitude $p\in[0,1/2]$.
+Up to the explicitly charged mesh errors, $r+m=t$. The three relevant count
+exponents are
+\begin{align}
+ I(\delta,p,r)&=1-\delta\bigl(p+(1-p)r\bigr),\nonumber\\
+ A(\delta,p,m)&=1-2\delta m-2\delta p\frac{B-2m}{\lambda},\label{branches}\\
+ L(\delta,t)&=1-\delta+(5/6-\delta)(t-1).\nonumber
+\end{align}
+The affine plain branch uses \eqref{affine-moment} at width
+$(B-2m)/\lambda$, with a small subtraction for rounding. It improves on
+the old plain width $(1-2m)/(6\kappa)$ on the critical fibers.
+
+This is a legitimate instance of the \emph{actual} source theorem.
+Fix a final target character $\psi$, and write $\eta_j$ for its detector
+dictionary characters. Each $\eta_j$ is represented as its own natural row,
+with the exact excluded-prime support and fixed masks. The generic
+paid main and error families apply to that row, and the literal energy
+identity identifies their energy with the fiber energy. The marked HIGH
+mesh cap is intersected with the original analytic mesh before the slot
+partition is chosen. This dictionary is finite: we take the maximum of its
+moment degrees and the union of its seminorm sets, then choose a common
+small height exponent for all its labels. The resulting exponent
+$\tau_\psi$ may depend on the final target $\psi$. No affine moment or
+uniform degree over infinitely many target characters is assumed.
+
+Put
+\begin{align*}
+ D(p)&=3-p-4p/\lambda,& a(p)&=2-4p/\lambda,& c(p)&=1-2pB/\lambda,\\
+ J(\delta,p)&=(5/6-\delta)D(p)+\delta(1-p)a(p).
+\end{align*}
+Solving $I=A$ at $m=t-r$ and then balancing with $L$ gives
+\begin{align}
+ r_N(p,t)&=\frac{a(p)t+2pB/\lambda-p}{D(p)},\qquad
+ t_N=1+\frac{\delta(1-p)c(p)}{J(\delta,p)},\nonumber\\
+ \Raff(\delta,p)&=1-\delta+
+ \frac{(5/6-\delta)\delta(1-p)c(p)}{J(\delta,p)}.\label{new-count}
+\end{align}
+Use this count on
+\[
+ \Reg=[89/200,97/200]\times[199/400,1/2],\qquad
+ m\in[m_0,847/2000],\quad m_0=(B-\lambda/25)/2.
+\]
+The exact region certificates give $D,J>0$, $1\leq t_N\leq3/2$,
+$23/37\leq r_N(p,t_N)\leq1$, and
+$t_N-r_N(p,t_N)\geq m_0+10^{-5}$.
+For selected widths below $17/500$, the old $\kappa$-marked moment is used;
+the affine theorem is invoked only at or above this lower gate. For plain lengths
+above $847/2000$, the old marked plain branch gives the same short exponent.
+The original unmarked branches cover the remaining cases. Thus the complete
+fiber argument gives \eqref{new-count}, with the original charged losses.
+The detector spacing is chosen $\varepsilon\leq10^{-5}$; the actual baseline
+constructor already gives $\varepsilon\leq1/200000$.
+
+\section{Closing every row and returning to the $L$-function}
+For $\kappa\in[\kappa_*,3/4]$, write
+\[
+ C_\kappa(p)=\frac{2(1-p)(3\kappa-p)}{3\kappa(3-p)-2p},\qquad
+ \Rold(\delta,p)=1-\delta+
+ \frac{\delta C_\kappa(p)(5/6-\delta)}{2(5/6-\delta+\delta C_\kappa(p))}.
+\]
+Let $R^*_{\kappa}$ equal $\Raff$ on $\Reg$ and $\Rold$ elsewhere.
+The affine region count is at most the old count at $\kappa_*$, and
+$R^*_{\kappa}$ is nonincreasing in $p$. This monotonicity is used when
+actual amplitude classes are transferred through the numerator masks.
+
+The complete normalized reconstruction has row exponent
+\begin{equation}
+ E_\kappa(d,C;\delta,p)=\frac{1+\delta}{2}+\frac{13h}{75}
+ -\frac y2-\frac\ell2+\ell\delta p
+ +d\left(\frac14+\frac34R^*_\kappa(\delta,p)-\frac{17}{50}\right)
+ -\frac{\delta p C}{2}.\label{row}
+\end{equation}
+Its two physical capacities are
+\[
+ C_{\rm new}(d)=\frac{2y-(2-B)d}{\lambda},\qquad
+ C_{{\rm old},\kappa}(d)=\frac{\min(d,2y-d)}{6\kappa}.
+\]
+With \eqref{parameters}, rational Bernstein certificates on closed
+rectangles, together with affine interpolation in $d$, establish
+\begin{align}
+ E_{\kappa_*}(d,C_{\rm new}(d);\delta,p)
+  &<\tht-\frac{4999}{5000000000},&&d_-\leq d\leq d_+,\label{new-row}\\
+ E_{\kappa_*}(d,C_{{\rm old},\kappa_*}(d);\delta,p)
+  &<\tht-\frac1{100000},&&1/200\leq d\leq d_- .\label{old-row}
+\end{align}
+Both inequalities hold for \emph{every} $\delta\in[0,3/4]$ and
+$p\in[0,1/2]$. Below $d=1/2$ the old saving is at least $1/1000$.
+For clarity, the new top row uses the affine count on $\Reg$ and the old
+count on its complement. The old half-height and junction rows are
+certified on the whole rectangle. Positive rational Bernstein
+coefficients certify the full polynomials, rather than samples of them;
+the corresponding cleared denominators are positive. The extension from
+$h$ to $h+10^{-10}$ costs less than $2\cdot10^{-10}$, giving
+\eqref{new-row}. At $d_-$ the new capacity exceeds the old capacity,
+so the new junction inherits \eqref{old-row}.
+
+The junction $d_-=h-3/5000$ also respects the actual source gates.
+In particular the plain scale $n=1-y/d+t$, for $0\leq t\leq1/1000$,
+satisfies $41/100<n<264/625$; its affine capacity lies in
+$(17/500,37/1000)$; and
+$0\leq2y/d-1<4/25$. The fixed source HIGH, LOW, amplifier and tail
+reserves, as well as the cube-floor payment, therefore remain available
+from the inherited complete estimates. These gates are checked alongside
+the row certificates, not inferred from their positivity.
+
+Finally set $\kappa=2\beta-1$. The explicit feedback estimates strengthen
+\eqref{new-row}--\eqref{old-row} to
+\begin{align*}
+ E_{2\beta-1}(d,C_{\rm new};\delta,p)-\beta
+ &<-\frac{4999}{5000000000}-\frac{24}{25}(\beta-\tht),\\
+ E_{2\beta-1}(d,C_{{\rm old},2\beta-1};\delta,p)-\beta
+ &<-\frac1{100000}-\frac34(\beta-\tht).
+\end{align*}
+The finite reconstruction, mesh and height costs can consequently be
+chosen below a fixed fraction of $\beta-\tht$. The unchanged source masks,
+prime products, transport and regularizer yield a common error reserve
+$\sigma>0$. Assembly fixes this reserve and $\omega=(\beta-\tht)/2$
+before choosing each target's height. Thus the Mellin continuation gap is
+\[
+ \varepsilon_{\rm cont}=\min\!\left(\frac{\beta-\tht}{2},\sigma\right)>0,
+\]
+independent of the primitive target. Only the constants, regularizer and
+height choice depend on that target. The inherited continuation theorem
+excludes every primitive nontrivial zero in
+$\Re s>\beta-\varepsilon_{\rm cont}$, contradicting the global supremum.
+Hence $\beta\leq\tht$, and the Dirichlet transfer proves the theorem.
+
+\section{Scope, provenance and verification}
+The mathematical advance is the use of a stronger, already source-paid
+affine moment \emph{inside} the detector. The proof does not add the two
+predecessor improvements as numerical boundary gains. The first improvement
+changes the admissible moment; the second uses that moment in a separate
+counting problem. Their interaction changes the crossing formulas and the
+admissible prime-amplitude region, which is why the complete row
+certificates and source gates must be regenerated together.
+
+The accompanying Lean construction exposes no new analytic premise in its
+final target. Its route is
+\begin{gather*}
+ \text{actual per-label affine energy}\ \longrightarrow\
+ \text{actual detector count}\ \longrightarrow\\
+ \text{finite numerator and source probe}\ \longrightarrow\
+ \text{canonical Dirichlet nonvanishing}.
+\end{gather*}
+The final continuation contract has the order
+$\exists\omega,\sigma>0\;\forall\psi\;\exists\tau_\psi$,
+with the displayed common gap. For each primitive target $\psi$, its finite
+detector dictionary shares $\tau_\psi$ after taking the stated finite maxima;
+character-dependent heights cannot shrink the continuation gap.
+The scalar argument above explains the new mechanism. The analytic
+reductions are supplied by the complete inherited source theorems.
+
+\textbf{Verification status.}
+The canonical theorem at $21871/25000$ was accepted locally for source
+commit \href{https://github.com/Gaozhongpai/QuasiRiemannTracker/blob/74643447f52a2df4d05cbb23f50b9e6f2959beaa/submissions/gao-affine-asymmetric-20261015/src/Candidate/Main.lean}{\texttt{74643447f52a}}.
+Comparator accepted the canonical statement with only
+\texttt{Classical.choice}, \texttt{Quot.sound} and \texttt{propext}; Lean,
+NanoDa and con-ron each accepted the complete proof. All 897 candidate
+modules were compiled from source in the parent replay. The final,
+metadata-only head reused an authenticated local compilation cache and
+ran fresh controls, canonical exports and all three kernels. Exact
+rational checks also cover the displayed continuous rows and physical
+gates. A sanitized receipt accompanies this manuscript. Official tracker
+admission remains pending.
+
+\textbf{Attribution.}
+OpenAI supplies the protected $7/8$ framework and library. Hailey Collet
+supplies Cycle25/Cycle61, the initial affine moment, and the complete
+physical source and continuation architecture. The weighted numerator
+uses Akash Levy's contribution and its inherited credits.
+Timbalud supplies the marked HIGH count and the asymmetric/common-radical
+source improvement \cite{asymmetric}. DaysSky supplies the actual
+dictionary-character affine detector construction and its height order
+\cite{detector}. Liqsweep/blueberryvertigo also recorded the count-side
+affine idea and related arithmetic in PR52, whose Lean integration was
+unfinished \cite{related}; that proposed endpoint is not used as a proved
+input. Zhongpai Gao, with AI assistance, combines the source mechanisms,
+chooses \eqref{parameters}, regenerates the exact certificates and carries
+the changed source interfaces through the final assembly. Existing
+OpenAI, Collet, Levy and other predecessor notices are retained. The
+integration and manuscript are released under Apache-2.0, subject to the
+retained predecessor and dependency licenses.
+
+\begin{thebibliography}{9}\small
+\bibitem{collet} Hailey Collet, \emph{Cycle61: all-Dirichlet boundary
+$0.874861$}, complete source and manuscript,
+\href{https://github.com/GTimG/QuasiRiemannTracker/pull/42}{QuasiRiemannTracker PR42} (2026).
+\bibitem{asymmetric} timbalud, \emph{Asymmetric marked counting with coupled
+radical allocation}, source at commit \texttt{8cb265dc3490},
+\href{https://github.com/GTimG/QuasiRiemannTracker/pull/50}{QuasiRiemannTracker PR50} (2026).
+\bibitem{detector} DaysSky, \emph{Cycle61 with the affine moment in the detector
+count}, source at commit \texttt{67edfb7a1161},
+\href{https://github.com/GTimG/QuasiRiemannTracker/pull/56}{QuasiRiemannTracker PR56} (2026).
+\bibitem{related} liqsweep / blueberryvertigo, \emph{Collet's affine moment in the
+detector count}, related arithmetic proposal,
+\href{https://github.com/GTimG/QuasiRiemannTracker/pull/52}{QuasiRiemannTracker PR52} (2026).
+\bibitem{openai} OpenAI, \emph{Quasi-Riemann hypothesis formalization}, protected
+source snapshot \texttt{fd4aeeb2}, \url{https://github.com/OpenAI/math}.
+See the retained source notices for Akash Levy's weighted numerator and the
+full dependency attribution.
+\end{thebibliography}
+\end{document}

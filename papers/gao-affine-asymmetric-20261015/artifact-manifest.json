@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "kind": "paper-and-local-canonical-verification",
+  "result_id": "gao-affine-asymmetric-20261015",
+  "theta_exact": "21871/25000",
+  "source_repository": "Gaozhongpai/QuasiRiemannTracker",
+  "source_commit": "74643447f52a2df4d05cbb23f50b9e6f2959beaa",
+  "local_verification": "PASS",
+  "tracker_admission": "PENDING",
+  "files_sha256": {
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "papers/gao-affine-asymmetric-20261015/paper.pdf": "40c501c541570254c35c30965f64701b27ba9206d075d4ec7c35f5f3fe7f47b9",
+    "papers/gao-affine-asymmetric-20261015/paper.tex": "6f7818b0ebab77ed89abb58c01caab75279f6745d571849f638e8a399e85534e",
+    "papers/gao-affine-asymmetric-20261015/README.md": "0b414cc7765411a4b4a9298ed9a16a6abc5db3e3aae52359523f5a186c927900",
+    "papers/gao-affine-asymmetric-20261015/public-receipt.json": "6f8c7f43fd08ecdb13344e1c2274e96b78aa5c8df6b7546946b88cd752acf5ca",
+    "papers/gao-affine-asymmetric-20261015/generate-receipt.py": "65d08c0aed608a3f14aa8361cdc4f9d115f0a6a1f1240530bb64dfe5ddcba554",
+    "papers/gao-affine-asymmetric-20261015/expected-verification.json": "2835adefa341b3e783d34bdeff4dc81d4b3357a35a500a398df81f146dcc2263"
+  }
+}
