@@ -1,19 +1,40 @@
 {
   "schema_version": 1,
-  "kind": "paper-and-local-canonical-verification",
+  "kind": "paper-and-official-canonical-verification",
   "result_id": "gao-affine-asymmetric-20261015",
   "theta_exact": "21871/25000",
-  "source_repository": "Gaozhongpai/QuasiRiemannTracker",
-  "source_commit": "74643447f52a2df4d05cbb23f50b9e6f2959beaa",
-  "local_verification": "PASS",
-  "tracker_admission": "PENDING",
+  "source_repository": "GTimG/QuasiRiemannTracker",
+  "source_commit": "3874f3e75de18ff5806dcb9519fc260e034ef0e9",
+  "tracker_admission": "VERIFIED_AND_MERGED",
   "files_sha256": {
     "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-    "papers/gao-affine-asymmetric-20261015/paper.pdf": "f8f6d7eebbe058b7e34c800adca9579ac32016d2d222752327b8e4d9cedae36c",
-    "papers/gao-affine-asymmetric-20261015/paper.tex": "ef22870f3d46d4f2430a9f1c3b4339ef1bf1e6d7ef2e2eae9b67bfec952b4b3a",
-    "papers/gao-affine-asymmetric-20261015/README.md": "0b414cc7765411a4b4a9298ed9a16a6abc5db3e3aae52359523f5a186c927900",
+    "papers/gao-affine-asymmetric-20261015/paper.pdf": "372643a4ac54138e0bd6cd30f9d04e801147654707cec83d25862f7c1d21b799",
+    "papers/gao-affine-asymmetric-20261015/paper.tex": "1289cc5c290d611ef49d782361d2ed0a3c61ec055a08da2245d035f5bde90da0",
+    "papers/gao-affine-asymmetric-20261015/README.md": "a511a0157ee9528d13dbad535acb16c51cf2fcdcb9d76f27ed0e8f9df1a82c2d",
     "papers/gao-affine-asymmetric-20261015/public-receipt.json": "6f8c7f43fd08ecdb13344e1c2274e96b78aa5c8df6b7546946b88cd752acf5ca",
     "papers/gao-affine-asymmetric-20261015/generate-receipt.py": "65d08c0aed608a3f14aa8361cdc4f9d115f0a6a1f1240530bb64dfe5ddcba554",
     "papers/gao-affine-asymmetric-20261015/expected-verification.json": "2835adefa341b3e783d34bdeff4dc81d4b3357a35a500a398df81f146dcc2263"
+  },
+  "official_verification": {
+    "certificate_url": "https://gtimg.github.io/QuasiRiemannTracker/certificates/gao-affine-asymmetric-20261015.json",
+    "certificate_sha256": "45fd290bd827a47f3a85b0b98fd57a4cc2d5476420484ba94f3fc7be83fc5440",
+    "verified_at": "2026-10-15T09:17:19.521444+00:00",
+    "report_url": "https://github.com/GTimG/QuasiRiemannTracker/actions/runs/38698872054/attempts/1",
+    "report_sha256": "920bc104252caed2c1f073c890fb737485b9a83437a8a3ea60309f42ac94c94e",
+    "kernels": [
+      "Lean default",
+      "nanoda",
+      "con-ron"
+    ],
+    "pr_url": "https://github.com/GTimG/QuasiRiemannTracker/pull/60",
+    "merged_at": "2026-10-15T10:56:12Z",
+    "merge_commit": "cb1bd454a095a35ea93c63a9d4702e001b706a42"
+  },
+  "historical_local_verification": {
+    "status": "PASS",
+    "source_repository": "Gaozhongpai/QuasiRiemannTracker",
+    "source_commit": "74643447f52a2df4d05cbb23f50b9e6f2959beaa",
+    "receipt_sha256": "6f8c7f43fd08ecdb13344e1c2274e96b78aa5c8df6b7546946b88cd752acf5ca",
+    "scope": "Unchanged historical receipt for the earlier source head; official final-head evidence is separate."
   }
 }

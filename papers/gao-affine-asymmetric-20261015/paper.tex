@@ -16,11 +16,11 @@
 \newtheorem{lemma}{Lemma}
 \title{Affine detector counting with asymmetric source savings}
 \author{Zhongpai Gao\\\small With AI assistance; predecessor contributions acknowledged below}
-\date{14 October 2026}
+\date{15 October 2026}
 \begin{document}
 \maketitle
 \vspace{-2.5em}
-\begin{center}\small\textbf{Canonical proof checked locally; tracker admission pending.}\end{center}
+\begin{center}\small\textbf{Official tracker verification accepted; PR60 merged 15 October 2026.}\end{center}
 \begin{abstract}
 We prove nonvanishing of every Dirichlet
 $L$-function in $\Re s>21871/25000=0.874840$, away from the principal pole.
@@ -278,17 +278,20 @@ The scalar argument above explains the new mechanism. The analytic
 reductions are supplied by the complete inherited source theorems.
 
 \textbf{Verification status.}
-The canonical theorem at $21871/25000$ was accepted locally for source
+The official \href{https://gtimg.github.io/QuasiRiemannTracker/certificates/gao-affine-asymmetric-20261015.json}{tracker certificate}
+records $21871/25000$ at final source commit
+\href{https://github.com/GTimG/QuasiRiemannTracker/blob/3874f3e75de18ff5806dcb9519fc260e034ef0e9/submissions/gao-affine-asymmetric-20261015/src/Candidate/Main.lean}{\texttt{3874f3e75de1}}
+as verified on 15 October 2026 by Lean, NanoDa and con-ron;
+\href{https://github.com/GTimG/QuasiRiemannTracker/pull/60}{PR60} was merged that day.
+The accompanying sanitized historical local receipt is bound to source
 commit \href{https://github.com/Gaozhongpai/QuasiRiemannTracker/blob/74643447f52a2df4d05cbb23f50b9e6f2959beaa/submissions/gao-affine-asymmetric-20261015/src/Candidate/Main.lean}{\texttt{74643447f52a}}.
-Comparator accepted the canonical statement with only
-\texttt{Classical.choice}, \texttt{Quot.sound} and \texttt{propext}; Lean,
-NanoDa and con-ron each accepted the complete proof. All 897 candidate
-modules were compiled from source in the parent replay. The final,
-metadata-only head reused an authenticated local compilation cache and
-ran fresh controls, canonical exports and all three kernels. Exact
-rational checks also cover the displayed continuous rows and physical
-gates. A sanitized receipt accompanies this manuscript. Official tracker
-admission remains pending.
+In that local replay, Comparator accepted the canonical statement with only
+\texttt{Classical.choice}, \texttt{Quot.sound} and \texttt{propext}, and all
+three kernels accepted the proof. Its parent replay compiled all 897
+candidate modules from source; its metadata-only follow-up reused an
+authenticated local cache and ran fresh controls, canonical exports and
+all three kernels. Exact rational checks cover the displayed continuous
+rows and physical gates.
 
 \textbf{Attribution.}
 OpenAI supplies the protected $7/8$ framework and library. Hailey Collet
