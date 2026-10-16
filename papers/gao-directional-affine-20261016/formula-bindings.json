@@ -9,7 +9,7 @@
     ]
   },
   {
-    "topic": "(3),(4): fixed incumbent and named amplifier",
+    "topic": "(8),(9): fixed incumbent and named amplifier",
     "source": "source-provider/SourceProvider/NamedSource.lean",
     "source_sha256": "1c329eb1bdfe48cc75a6c645a1aa3f8e4a57be071a159527287301b7d951cf24",
     "declarations": [
@@ -28,13 +28,22 @@
     ]
   },
   {
-    "topic": "(5),(6): actual numerator facet and moving width",
+    "topic": "(4)--(7): actual numerator facet and moving width",
     "source": "source-provider/SourceProvider/HighPayment.lean",
     "source_sha256": "ea3ae95e5805200426b7e81d3fa1b3daa38a8fdfe7e27fdb88789151937543aa",
     "declarations": [
       "actual_high_joint_valuation_saving",
       "marked_width_payment",
       "tail_width_payment"
+    ]
+  },
+  {
+    "topic": "(4),(5): common-factor coupling and two-case rate",
+    "source": "source-provider/SourceProvider/ScalarValuation.lean",
+    "source_sha256": "740f931afd0a5dc52d671ccd4632e5c27d47434305945dfbb3842f04664a113c",
+    "declarations": [
+      "ValuationGain.symmetric_radical_facet",
+      "ValuationGain.first_common_symmetric"
     ]
   },
   {
@@ -74,7 +83,7 @@
     ]
   },
   {
-    "topic": "(7),(8): separate ERROR deletion reserve",
+    "topic": "(11): separate ERROR deletion reserve",
     "source": "source-provider/SourceProvider/ErrorNamed.lean",
     "source_sha256": "f30e3b7f45c8dfb5460ad89394a11a6eb2e7b4dc8f0b74b9c84b1ad3a940a445",
     "declarations": [
@@ -116,7 +125,7 @@
     ]
   },
   {
-    "topic": "(9): new affine count",
+    "topic": "(12): new affine count",
     "source": "detector/Detector836/Arith.lean",
     "source_sha256": "66ec7ccfd98004acd6b5a3eb3a7976a7248e81ff699b0b56773803b9e45d8e5f",
     "declarations": [
@@ -134,7 +143,7 @@
     ]
   },
   {
-    "topic": "(10): full critical row",
+    "topic": "(13): full critical row",
     "source": "detector/Detector836/EndpointArithmetic.lean",
     "source_sha256": "d2bbb9c28032f33797eb9efb4b9e3a3ddea9db71537d0a5cd6d9c7c365313ca2",
     "declarations": [

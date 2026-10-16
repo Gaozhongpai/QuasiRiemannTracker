@@ -5,307 +5,316 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
 \setlength{\emergencystretch}{2em}
-\input{status.tex}
 \newcommand{\tht}{\vartheta}
 \newcommand{\Raff}{R_{\mathrm{aff}}}
-\newcommand{\Rold}{R_{\mathrm{old}}}
 \newcommand{\kap}{\kappa}
-\title{A movable source-width certificate for the\texorpdfstring{ $0.874836$}{ 0.874836} boundary}
-\author{Zhongpai Gao\\\small With AI assistance; predecessor contributions acknowledged below}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\title{A width-sensitive affine moment bound for Dirichlet \texorpdfstring{$L$}{L}-functions}
+\author{Zhongpai Gao}
 \date{16 October 2026}
 \begin{document}
 \maketitle
 \vspace{-2em}
-\begin{center}\small\textbf{\proofstatus}\end{center}
 \begin{abstract}
-\resultverb\ the all-moduli Dirichlet boundary
-$218709/250000=0.874836$. A new actual affine source line keeps the moving
-marked HIGH width, uses the established incumbent for LOW, and preserves a
-separate ERROR reserve. Three detector regimes and exact continuous row
-certificates carry this line through the weighted numerator and continuation.
-We distinguish the closed local theorem from the pending independent replay.
+We sharpen the all-moduli Dirichlet nonvanishing boundary from $0.874840$
+to $0.874836$. The new ingredient is a joint estimate that preserves the
+total logarithmic width of the selected primes through both allocation
+stages and couples the resulting saving to a valuation constraint on the
+actual numerator. Keeping this moving width, rather than its smallest
+admissible value, gives a stronger affine moment region. Combining the
+estimate with the existing bounds for the remaining source and exceptional
+terms yields the moment inequality needed for the zero-free region.
 \end{abstract}
 
-\section{Statement and fixed geometry}
-The locally checked theorem is: for every positive modulus $n$, every Dirichlet
-character $\chi$ modulo $n$, and every $s\in\mathbb C$,
+\section{Result and proof strategy}
+\begin{theorem}
+For every positive integer $n$, every Dirichlet character $\chi$ modulo $n$,
+and every $z\in\mathbb C$,
 \[
- \Re s>\tht,\qquad \neg(\chi=1\text{ and }s=1)
- \quad\Longrightarrow\quad L(\chi,s)\ne0.                 \tag{1}
+ \Re z>\tht:=\frac{218709}{250000}=0.874836,
+ \qquad \neg(\chi=1\ \text{and}\ z=1)
+ \quad\Longrightarrow\quad L(\chi,z)\ne0.                 \tag{1}
 \]
-The OpenAI--Collet framework reduces (1) to improving the Eisenstein
-Hecke-family global zero supremum $\beta$ \cite{openai,collet}.
-We use the accepted $\beta\le21871/25000$ as an incumbent input,
-never the new conclusion $\beta\le\tht$.
+\end{theorem}
+The analytic framework is inherited from OpenAI and Collet
+\cite{openai,collet}. It studies a global zero supremum $\beta$ in an
+Eisenstein Hecke family and transfers its bound to all Dirichlet characters.
+We use the established $\beta\le0.874840$ \cite{incumbent} as an input.
+The new estimate improves the moment calculation inside that argument;
+it does not replace the underlying zero-density or continuation theorems.
 
-The new rational geometry is
-\begin{align*}
- h&=\frac{3181}{4000},&d_-&=\frac{15893}{20000},&d_+&=h+10^{-10},\\
- \ell&=\frac{11}{3}-4\tht=\frac{31373}{187500},&
- x&=1+\ell-h=\frac{558109}{1500000},&
- y&=h-2\ell=\frac{690907}{1500000},\\
- \kap_*&=2\tht-1=\frac{93709}{125000},&
- \lambda&=\frac{19793}{5000},&B&=\frac{987047}{1000000}.
-\end{align*}
-The actual initial affine moment is proved on
-\[
- \frac{41}{100}\le m_1,m_2\le\frac{11}{25},\qquad
- \frac{17}{500}\le b\le\frac1{25},\qquad
- m_1+m_2+\lambda b\le B.                              \tag{2}
-\]
-For equal lengths this is $2m+\lambda b\le B$. The literal energy,
-masks, selected primes, seminorms and height losses are preserved;
-the constants precede the moving row and original slot subset.
+Here is the moment region that the argument needs. Normalize all logarithmic
+lengths by $\log U$, where $U>1$ is the source scale. The two ordinary
+Dirichlet-polynomial lengths are $m_1,m_2$, and
+$s=\sum_j\log \mathrm N(P_j)/\log U$ is the total width of the selected prime ideals $P_j$.
+Write $\mathcal E_\eta(\Phi,\mathbf p)$ for the normalized energy in Collet's initial affine
+moment, with fixed character $\eta$, shifts of size at most $T$, and the
+original masks and selected-prime weights.
 
-\section{LOW: use the proved incumbent without circular feedback}
-Put $q=839/1250$, $\kap_0=9371/12500$, and $r_L=1/4000000$.
-Here $\kap_0=2(0.874840)-1$ is fixed by the predecessor. For a cell upper endpoint $b$, set
-\begin{align}
- D(b)&=B-1+(6\kap_0-\lambda)b,\nonumber\\
- a(b)&=\frac{q}{6(\kap_0-q)}D(b)
-             +\frac{r_L}{1-q/\kap_0},                 \tag{3}\\
- A(b)&=B-(\lambda-1)(b-10^{-5}).\nonumber
-\end{align}
-The exact identity
+\begin{proposition}[Affine moment region]
+For every $\varepsilon>0$, the initial energy satisfies
 \[
- a(b)-\frac{q}{6\kap_0}\bigl(D(b)+6a(b)\bigr)=r_L       \tag{4}
+ \mathcal E_\eta(\Phi,\mathbf p)\ll_{\eta,\varepsilon}
+       \mathcal D(\Phi)\mathcal S(\mathbf p)^2(1+T)^N U^{1+\varepsilon}
+ \quad\text{for}\quad m_1+m_2+\lambda s\le B,              \tag{2}
 \]
-pays the complete LOW removal cost: both the capacity and its removal price
-change with the incumbent. The accepted positive/zero energy pair supplies
-all heights and masks. The stronger target is weakened to Collet's generic
-LOW fee ledger for the outer contraction.
+where
+\[
+ \lambda=\frac{19793}{5000},\qquad B=\frac{987047}{1000000},\qquad
+ \frac{41}{100}\le m_i\le\frac{11}{25},\quad
+ \frac{17}{500}\le s\le\frac1{25}.
+\]
+Here $\Phi$ is a nonnegative radial weight, $\mathbf p$ a pair of test
+functions, $\mathcal D$ the standard diagonal control, $\mathcal S$ a finite
+Schwartz control, and $N$ a finite degree. The prime-factor partition is
+sufficiently fine, as in the initial-moment theorem.
+\end{proposition}
+The significance of (2) is its available prime width: for equal plain
+lengths $m$, it permits $s\le(B-2m)/\lambda$. This width later enters the
+count of detector rows. A saving lost at the moment stage therefore cannot
+be recovered merely by changing the detector parameters.
+
+The source decomposition has a LOW part handled by the incumbent moment,
+and a HIGH part requiring marked counting. The new part is a width-sensitive
+estimate for the latter. After the two source
+allocations, some selected width has entered common factors, some is frozen,
+and the rest survives. We keep their sum tied to the original width and
+use the numerator valuation bound before separating these contributions.
+Section~2 proves the resulting joint inequality. Section~3 combines it with
+the known LOW estimate and the error terms to prove Proposition~1.
+Section~4 applies this moment to the detector and weighted numerator,
+then invokes the inherited continuation argument to prove Theorem~1.
 
 \newpage
-\section{HIGH: retain actual width and the common-allocation geometry}
-The marked HIGH source reuses timbalud's asymmetric inverse/plain counting
-and common-radical architecture \cite{asymmetric}. The actual first numerator
-also satisfies a valuation bound whose logarithmic form is
-$4L_c\le5(c+d)$. Together with the original radical and cancellation gates,
-it gives a common-width rate
+\section{The joint HIGH estimate}
+\subsection*{The numerator and the common factors}
+Let $\nu$ denote the auxiliary density level of a HIGH source bin; its
+zero-real-part threshold is $(1+\nu)/2$. Put
 \[
- \rho(\delta)=1-\frac{10\delta}{3(5-2\delta)},\qquad
- \gamma(\delta)=\delta-
-       \max\left(4\rho(\delta)-1,\frac{2+22\rho(\delta)}{21}\right). \tag{5}
+ \rho(\nu)=1-\frac{10\nu}{3(5-2\nu)},\qquad
+ \gamma(\nu)=\nu-
+       \max\left(4\rho(\nu)-1,\frac{2+22\rho(\nu)}{21}\right). \tag{3}
 \]
-The second allocation pays rate $\delta$. Neither reflection orientation
-changes the first-numerator identity or substitutes a synthetic source norm.
+Here $\rho$ is the exponent supplied by the unmarked source estimate.
+In the range used below, $1/4\le\rho\le2/5$.
 
-Write $u,f,v\ge0$ for the removed common, frozen and surviving widths.
-The two actual allocation stages and the tiny-slot discard prove
+The first allocation has logarithmic ideal lengths $c,d$, active radical
+width $R$, cancelled radical width $R_0$, and numerator width $L_c$.
+The nonnegative quantity $E$ is its inactive-projector loss. These quantities
+belong to the same allocation. Besides $R\le\min(c,d)$ and $R_0\ge0$,
+the actual numerator satisfies
 \[
- u+f+v\ge S(b):=b-10^{-5}-10^{-3},\qquad
- Q\ge F(b)-2u,\quad
- F(b)=\frac{122}{125}\bigl(1-6a(b)-10^{-3}\bigr).       \tag{6}
+ L_c\le5(R-R_0),\qquad 4L_c\le5(c+d).                    \tag{4}
 \]
-The crucial change is the moving quantity $S(b)$: the original selected
-width is retained through both allocations, before choosing the cell.
-Replacing it everywhere by the smallest permitted width loses useful
-payment at larger cells, where $a(b)$ and $A(b)$ also move.
+The second inequality follows prime by prime from the numerator valuations
+and holds in either reflection orientation. Its use together with the
+first inequality, rather than as an independent bound on a free numerator,
+is the relevant coupling.
 
-Set
+For $x_+=\max(x,0)$, the common-factor part of the HIGH exponent is
 \[
- r(\delta)=\frac{32}{39}\frac{\delta(5-6\delta)}{5-2\delta},
- \qquad t(\delta)=\frac{6\rho(\delta)-1}{250},\qquad
+ \mathcal F=(1-\rho)(c-d)_+-\nu c-(1+\rho)R-E
+             -\frac{(3c-5d-R)_+}{6}+\rho L_c+R_0.
+\]
+We obtain
+\[
+                   \mathcal F\le-\gamma(\nu)c-E.         \tag{5}
+\]
+For completeness, when $c\le d$, insert $L_c\le5(R-R_0)$ and $R\le c$;
+this gives rate $\nu-(4\rho-1)$. When $d\le c$, a positive linear
+combination of (4) gives
+\[
+ 21\rho L_c+21R_0\le(19\rho-4)(c+d)+(16+29\rho)R.
+\]
+Insert this and retain the positive-part penalty in $\mathcal F$; the
+resulting rate is $\nu-(2+22\rho)/21$. Taking the smaller of these two
+rates proves (5). The two-piece rate is essential to cover both orderings.
+
+\subsection*{Width survives both allocations}
+Let $u,f,v\ge0$ be the common width removed by the first allocation,
+the frozen width in the second, and the surviving selected width.
+Let $Q$ be the remaining logarithmic frequency scale. The source identities
+give bounds of the form
+\[
+                 u+f+v\ge S,\qquad Q\ge F-2u.            \tag{6}
+\]
+The common width pays rate $\gamma=\gamma(\nu)$ by (5), the second allocation
+pays rate $\nu$, and the marked inverse/plain estimate of timbalud
+\cite{asymmetric} pays
+\[
+ r(\nu)\min(v,\tau_sQ),\qquad
+ r(\nu)=\frac{32}{39}\frac{\nu(5-6\nu)}{5-2\nu},\quad
  \tau_s=\frac{13}{400}.
 \]
-The marked payment is
-$\gamma u+\delta f+r\min(v,\tau_sQ)$; its large sixth-power tail uses
-$\gamma u+\delta f+tQ$.
-If $v\le\tau_sQ$, compare the three width rates and use the first inequality
-in (6). If $v>\tau_sQ$, insert the second inequality in (6) and use
-$2r\tau_s\le\gamma$. The analogous tail step uses $2t\le\gamma$.
-Consequently it suffices to check four scalar channels. With
+Thus the joint payment is $\gamma u+\nu f+r\min(v,\tau_sQ)$.
+
+\begin{lemma}[Conserved-width payment]
+If $S,F\ge0$, $0\le\gamma\le\nu$, $r\ge0$, $\tau_s\ge0$ and
+$2r\tau_s\le\gamma$, then (6) implies
 \[
- H(b,\delta)=1-\rho(\delta)-\delta A(b)
-                         -a(b)(5-6\rho(\delta)),
+ \gamma u+\nu f+r\min(v,\tau_sQ)
+       \ge\min\{\gamma S,\ rS,\ r\tau_sF\}.             \tag{7}
 \]
-we display a conservative common ledger charging $1/20000$ and a separate
-$1/200000$ raw-root allowance:
+\end{lemma}
+If $v\le\tau_sQ$, compare the three width rates and use $u+f+v\ge S$.
+Otherwise use $Q\ge F-2u$: the coefficient of $u$ is
+$\gamma-2r\tau_s\ge0$, leaving at least $r\tau_sF$.
+The large sixth-power tail has payment $\gamma u+\nu f+tQ$,
+where $t=(6\rho-1)/250$; the same proof gives $tF$ when $2t\le\gamma$.
+These inequalities keep the common and surviving widths in one estimate.
+Replacing $S$ by its minimum prematurely discards saving precisely where
+the amplifier and total source volume are also increasing.
+
+\newpage
+\section{Completing the affine moment}
+We now choose the amplifier while keeping the width variable.
+Let $b$ be the upper endpoint of the cell containing $s$, with
+$b-10^{-5}\le s\le b$; thus $3401/100000\le b\le1/25$.
+Write $a(b)$ for the amplifier exponent and $A(b)$ for the total source-volume
+exponent. Take
+\begin{gather*}
+ q=\frac{839}{1250},\qquad \kap_0=2(0.874840)-1=\frac{9371}{12500},
+ \qquad r_L=\frac1{4000000},\\
+ D(b)=B-1+(6\kap_0-\lambda)b,\qquad
+ a(b)=\frac{qD(b)}{6(\kap_0-q)}+\frac{r_L}{1-q/\kap_0},\\
+ A(b)=B-(\lambda-1)(b-10^{-5}),\qquad
+ S(b)=b-10^{-5}-10^{-3},\qquad
+ F(b)=\frac{122}{125}\bigl(1-6a(b)-10^{-3}\bigr).         \tag{8}
+\end{gather*}
+The formula for $A$ follows from
+$m_1+m_2+s\le B-(\lambda-1)s$. The two allocations and the discarded tiny
+slots give (6) with $S=S(b)$ and $F=F(b)$.
+In particular the supply varies with the original width $s$.
+
+\textbf{LOW.} The established incumbent is $\kap_0$, not the new value
+$2\tht-1$ that we seek to prove. The exact identity
+\[
+ a(b)-\frac{q}{6\kap_0}\bigl(D(b)+6a(b)\bigr)=r_L        \tag{9}
+\]
+pays the complete LOW removal cost. Both its capacity and removal price
+use the same incumbent. The original positive/zero moment estimates and
+height bounds therefore apply without circular feedback. The LOW/HIGH
+zero-bin junction is $(1+q)/2=2089/2500$.
+
+\textbf{HIGH.} Before the width payment, the remaining saving is
+\[
+ H(b,\nu)=1-\rho(\nu)-\nu A(b)-a(b)(5-6\rho(\nu)).
+\]
+Combining this with (7) and the tail estimate reduces HIGH to four comparisons:
 \begin{align*}
  H+\gamma S-\tfrac1{20000}-\tfrac1{200000}&\ge10^{-6},&
  H+rS-\tfrac1{20000}-\tfrac1{200000}&\ge10^{-6},\\
  H+r\tau_sF-\tfrac1{20000}-\tfrac1{200000}&\ge10^{-6},&
- H+tF-\tfrac1{20000}-\tfrac1{200000}&\ge10^{-6}.
+ H+tF-\tfrac1{20000}-\tfrac1{200000}&\ge10^{-6}.          \tag{10}
 \end{align*}
-The marked channels reserve the latter charge before the raw-root estimate;
-the unmarked common-width channel has the stronger bound without that charge.
-These hold on the full moving cell range
-$3401/100000\le b\le1/25$ and $q\le\delta\le7/10$.
-Monotonicity pays $7/10\le\delta\le3/4$ directly.
-The actual selected-family, physical-fiber and all-height suppliers preserve
-their original coefficients, frequency collisions and finite dictionaries.
+The $1/200000$ term reserves the raw-root charge in the marked estimate;
+the unmarked common-width estimate can omit it.
+These inequalities hold for every $b$ in its cell range and
+$q\le\nu\le7/10$. At $\nu=q$ each is affine in $b$, so rational arithmetic
+at the two endpoints suffices. To extend in $\nu$, $H$ increases by at least
+$(\nu-q)/5$, $\gamma$ is nondecreasing, and $r,t$ decrease by at most
+$\nu-q$ and $(\nu-q)/20$, respectively. Use
+$S,\tau_sF\le1/25$ and $F\le1$. For $7/10\le\nu\le3/4$ the unmarked
+estimate already gives $H\ge10^{-6}$.
 
-\section{ERROR: preserve the separate deletion capacity}
-The improved LOW incumbent does not change the original error-deletion
-capacity. Its defect is
+\textbf{ERROR and the remaining terms.} Error deletion retains the original
+$3/4$ incumbent and hence the coefficient $9/2$, independently of (9).
+Its defect and first-branch saving are
 \[
- D_E(b)=B-1+(9/2-\lambda)b,                            \tag{7}
+ D_E(b)=B-1+(9/2-\lambda)b,\qquad
+             a(b)/4-D_E(b)/6\ge1/1000.                 \tag{11}
 \]
-with $9/2=6(3/4)$. In particular, the first error branch has the independent
-uniform reserve
-\[
- \frac{a(b)}4-\frac{D_E(b)}6\ge\frac1{1000}.            \tag{8}
-\]
-The sixth and seventh branches have separately proved positive reserves;
-all three exceed the pre-loss fee-ledger reserve $7/30000000$.
-Absorbing branch losses halves this to $7/60000000$ in the complete
-normalized physical sum: its saving term is $-M(7/60000000)$, with $M$
-the source scale and allocation/shell losses still displayed separately.
-The source proof includes the full retained radical witness and the
-moving-prime average exactly once. The normalized ERROR family is converted
-to physical paid terms before it joins the actual MAIN family.
-Zero and tail terms use the new $a(b),A(b)$ as well: for example,
-$1-A(b)-5a(b)\ge227876729/3446640000$ and the full amplifier coefficient
-is at most $2048$. Thus a main-only scalar improvement is not being passed
-off as a complete source improvement.
+The sixth and seventh deletion branches have separate positive reserves.
+All three exceed the pre-loss reserve $7/30000000$; after branch-loss
+absorption the normalized physical sum uses saving $7/60000000$, with
+allocation and shell losses still separate. The moving-prime average is
+paid once and the retained radical witness is preserved.
+Finally $1-A(b)-5a(b)\ge227876729/3446640000$ pays the zero term; the
+amplifier coefficient is at most $2048$, and the inherited tail estimates
+complete the sum. The original source decomposition, with both reflections
+and all shifted heights, now proves Proposition~1.
 
 \newpage
-\section{Use the new moment inside the actual detector count}
-DaysSky's construction applies an initial affine moment separately to each
-actual detector dictionary character \cite{detector}. We keep this order.
-For inverse length $r$, plain length $m$, cutoff $t$ with $r+m=t$,
-zero density $\delta$ and normalized amplitude $p$, the three count inputs are
-\begin{align*}
- I&=1-\delta\bigl(p+(1-p)r\bigr),\\
- P&=1-2\delta m-2\delta p\frac{B-2m}{\lambda},\\
- L&=1-\delta+(5/6-\delta)(t-1).
-\end{align*}
-Balancing these gives, with positive denominators,
-\begin{align*}
- D(p)&=3-p-4p/\lambda,&a_p&=2-4p/\lambda,&c_p&=1-2pB/\lambda,\\
- J(\delta,p)&=(5/6-\delta)D(p)+\delta(1-p)a_p,\\
- t_N&=1+\frac{\delta(1-p)c_p}{J(\delta,p)},&
- \Raff&=1-\delta+
-       \frac{(5/6-\delta)\delta(1-p)c_p}{J(\delta,p)}.   \tag{9}
-\end{align*}
-The selected width must stay in the proved window of (2), including the
-rounding subtraction. The detector checks this with $m\le847/2000$ and
-$1\le t_N\le3/2$. Smaller widths or inadmissible plain lengths retain the
-original inverse/plain estimates. The global count uses three regimes:
-\begin{center}
-\begin{tabular}{lll}\toprule
-Regime & Density interval & Amplitude interval\\\midrule
-New affine line & $[451/1000,49/100]$ & $[49/100,1/2]$\\
-Accepted affine fallback & $[89/200,451/1000]$ & $[199/400,1/2]$\\
-Original count & complementary region & $[0,1/2]$\\\bottomrule
-\end{tabular}
-\end{center}
-The shared inverse/prime moment constants and balanced count parameters
-are fixed once. The new line also supplies the accepted fallback window,
-so there is no independent unproved analytic assumption on that rectangle.
-The amplitude-class theorem consumes this same actual count.
-
-The finite detector dictionary is formed after the final target character
-is fixed. Its moment degrees are maximized and its finite seminorm sets
-united before selecting a common small height exponent for its labels.
-This is uniformity over a finite dictionary; it does not assert one moment
-degree for infinitely many target characters.
-
-\section{Weighted numerator and whole-domain certificates}
-Akash Levy's weighted-numerator architecture and Collet's full continuation
-transport are retained \cite{akash,collet}. The source line changes the
-available numerator capacity on the upper height interval to
+\section{From the moment to the nonvanishing boundary}
+Let $\delta$ now denote the \emph{outer detector} density; it is independent
+of the inner source parameter $\nu$ in Sections~2--3.
+For inverse length $r$, plain length $m$, cutoff $t=r+m$ and normalized
+amplitude $p\in[0,1/2]$, the three count exponents are
 \[
+ I=1-\delta\bigl(p+(1-p)r\bigr),\quad
+ P=1-2\delta m-2\delta p\frac{B-2m}{\lambda},\quad
+ L=1-\delta+(5/6-\delta)(t-1).
+\]
+The new width in $P$ is exactly Proposition~1. Balancing $I,P,L$ gives
+\begin{gather*}
+ D_p=3-p-4p/\lambda,\quad a_p=2-4p/\lambda,\quad c_p=1-2pB/\lambda,\\
+ J=(5/6-\delta)D_p+\delta(1-p)a_p,\qquad
+ \Raff=1-\delta+\frac{(5/6-\delta)\delta(1-p)c_p}{J}.      \tag{12}
+\end{gather*}
+Following DaysSky \cite{detector}, apply the moment separately to each
+character in the finite detector dictionary; maxima of the degrees and
+unions of the seminorms give a common height range for that dictionary.
+Use (12) on $[.451,.49]\times[.49,.5]$, the accepted affine count on
+$[.445,.451]\times[.4975,.5]$, and the original count elsewhere.
+The selected widths and plain lengths remain within the corresponding
+moment windows; in particular $m\le847/2000$ on the new affine branch.
+
+Choose the outer geometry
+\[
+ h=3181/4000,\quad d_-=h-3/5000,\quad d_+=h+10^{-10},\quad
+ \ell=11/3-4\tht,\quad x=1+\ell-h,\quad y=h-2\ell,\quad
+ \kap_*=2\tht-1.
+\]
+The lower and upper height ranges use capacities
+\[
+ C_O(d)=\frac{\min(d,2y-d)}{6\kap_*},\qquad
  C_N(d)=\frac{2y-(2-B)d}{\lambda}.
 \]
-On the lower interval it remains
-$C_O(d)=\min(d,2y-d)/(6\kap_*)$.
-The physical shifted capacity is used with switch
-$t_0=103/100000$; this is distinct from the source frequency allowance
-$10^{-3}$. The choice pays the literal large-shift gate and preserves the
-unclipped physical slot cap $37/1000$.
-
-For either capacity $C$ the normalized critical row is
+Writing $R$ for the chosen count exponent, the weighted-numerator comparison is
 \begin{align*}
- E(d,C,\delta,p)={}&\frac{1+\delta}{2}+\frac{13h}{75}
- -\frac y2-\frac\ell2+\ell\delta p
- +d\left(\frac14-\frac{17}{50}\right)
- -\frac{\delta pC}{2}+\frac{3d}{4}R(\kap_*,\delta,p).  \tag{10}
+ E(d,C,\delta,p)={}&\frac{1+\delta}{2}+\frac{13h}{75}-\frac y2-\frac\ell2
+ +\ell\delta p+d\left(\frac14-\frac{17}{50}\right)
+ -\frac{\delta pC}{2}+\frac{3dR}{4}
+ \ \le\ \tht-10^{-7}.                                  \tag{13}
 \end{align*}
-Exact rational Bernstein certificates prove $E\le\tht-10^{-7}$ over all
-$0\le\delta\le3/4$, $0\le p\le1/2$. They cover the three count regimes,
-not just a sampled critical point. Affinity in $d$ reduces the two full
-height intervals to five ends: $d_0=1/200$, $y$, $d_-$ with $C_O$, and
-$d_-,d_+$ with $C_N$. Positivity of the count denominators, source geometry,
-selected-width and tail gates, amplitude monotonicity and the varying
-$\kap=2\beta-1$ feedback are proved separately and consumed by the row provider.
+This holds on the full rectangle $0\le\delta\le3/4$, $0\le p\le1/2$.
+After multiplying by the positive count denominators, rational Bernstein
+polynomials prove (13). Affinity in $d$ leaves five ends:
+$1/200,y,d_-$ with $C_O$, and $d_-,d_+$ with $C_N$.
+The shifted source uses $t_0=103/100000$; its large-shift and tail estimates
+are included. Feedback inequalities extend the comparison from $\kap_*$
+to the actual $\kap=2\beta-1$.
 
-\newpage
-\section{Actual assembly, verification scope and attribution}
-The source, detector and numerator components are joined through the
-following literal contracts:
-\begin{gather*}
- \text{actual LOW/HIGH/ERROR}\ \longrightarrow\ \text{full geometry budget}
- \ \longrightarrow\ \text{initial affine moment}\\
- \longrightarrow\ \text{dictionary moment/count}
- \ \longrightarrow\ \text{finite weighted numerator}
- \ \longrightarrow\ \text{common-probe continuation}.  \tag{11}
-\end{gather*}
-The full geometry budget includes both reflections, shifted Mellin heights,
-zero/tail terms and the original retained ERROR witness. The initial moment
-has the quantifiers of the original source theorem, with the new numerical
-line. The finite numerator uses the new physical lengths and the actual
-source and count receipts. Both lower and upper estimates are for the same
-normalized probe; the inherited correction factor is analytic and nonzero
-on the required new half-plane.
+Levy's weighted numerator and Collet's continuation argument
+\cite{akash,collet} now compare the lower and upper bounds for the same
+normalized probe. If $\beta>\tht$, choose a common positive continuation
+reserve and $\omega=(\beta-\tht)/2$ before the target characters.
+The finite-dictionary moments above allow target-dependent height ranges,
+while (13) supplies a common positive gap. Continuation then strictly
+improves the global supremum $\beta$, a contradiction. The inherited
+Hecke-to-Dirichlet transfer proves (1).
 
-The continuation argument keeps $\beta$ as the global supremum. Under a
-contradiction assumption $\beta>\tht$, the common positive continuation
-reserve is chosen before the primitive target characters. Target-dependent
-heights may then be chosen, including the finite dictionary maximum above.
-The resulting common gap improves the global supremum. This quantifier order
-is essential: a target-by-target gap without a common positive reserve would
-not establish the supremum contradiction.
-
-\textbf{Verification status.} \proofstatus\ The changed private Lean modules
-have per-module compiler receipts and reports restricted to
-\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
-The continuous scalar certificate additionally has an independent exact
-rational verifier. These checks are distinct from a clean replay of the
-complete packaged dependency graph, canonical-target comparison, independent
-kernel acceptance and tracker admission. The endpoint and replay status is
-recorded separately; this manuscript does not turn component receipts into
-an unperformed verification claim. Accepted predecessor sources remain
-unchanged.
-
-\textbf{What changes, and what is inherited.} The new design keeps the moving
-HIGH supply, the literal first-numerator norm facet and the accepted LOW
-incumbent together when choosing the affine line. It carries separate ERROR
-reserves and all three detector regimes through the existing source and
-weighted-numerator consumers. It changes the height geometry and regenerates
-the continuous endpoint certificates. The analytic continuation architecture,
-finite-source decomposition, moment estimates and large-scale counting
-mechanisms are inherited and explicitly reused.
-
-\textbf{Attribution.} OpenAI supplies the protected $7/8$ framework and core
-library. Hailey Collet supplies Cycle25/Cycle61, the initial affine moment,
-physical source decomposition and continuation architecture. Akash Levy
-supplies the weighted-numerator contribution and its inherited credits.
-Timbalud supplies the asymmetric marked HIGH counting and common-radical
-source mechanism. DaysSky supplies the actual affine detector moment and
-finite-dictionary height order. The accepted $0.874840$ integration is the
-fixed incumbent input. Related count-side affine arithmetic by
-liqsweep/blueberryvertigo is acknowledged, without using its proposed endpoint
-as a proved input. Zhongpai Gao, with AI assistance, supplies this source-line
-design, the new numerical geometry, exact certificates and the private fresh
-source/count/numerator integration. Existing source notices and predecessor
-licenses are retained; this manuscript is released under Apache-2.0 subject
-to those notices.
+\textbf{Acknowledgments.} We build on OpenAI's framework, Collet's source
+and continuation theory, Levy's weighted numerator, timbalud's asymmetric
+marked counts, and DaysSky's affine detector. Related affine-count
+arithmetic by liqsweep/blueberryvertigo is acknowledged. Zhongpai Gao used
+AI assistance. Predecessor source notices and licenses are retained;
+this manuscript is released under Apache-2.0 subject to those notices.
 
 \begin{thebibliography}{9}\small
 \bibitem{openai} OpenAI, \emph{Quasi-Riemann hypothesis formalization},
-protected snapshot \texttt{fd4aeeb2},
-\href{https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/003.md}{original manuscript and Lean framework}.
-\bibitem{akash} Akash Levy, weighted-numerator improvement,
-\href{https://github.com/GTimG/QuasiRiemannTracker/pull/6}{QuasiRiemannTracker PR6}.
+\href{https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/003.md}{original manuscript and framework}, snapshot \texttt{fd4aeeb2}.
 \bibitem{collet} Hailey Collet, \emph{Cycle61: all-Dirichlet boundary
 $0.874861$}, \href{https://github.com/GTimG/QuasiRiemannTracker/pull/42}{PR42}.
-\bibitem{asymmetric} timbalud, \emph{Asymmetric marked counting with coupled
-radical allocation}, \href{https://github.com/GTimG/QuasiRiemannTracker/pull/50}{PR50}.
-\bibitem{detector} DaysSky, \emph{Cycle61 with the affine moment in the detector
-count}, \href{https://github.com/GTimG/QuasiRiemannTracker/pull/56}{PR56}.
+\bibitem{akash} Akash Levy, weighted-numerator improvement,
+\href{https://github.com/GTimG/QuasiRiemannTracker/pull/6}{PR6}.
+\bibitem{asymmetric} timbalud, asymmetric marked counting and common-radical
+allocation, \href{https://github.com/GTimG/QuasiRiemannTracker/pull/50}{PR50}.
+\bibitem{detector} DaysSky, affine moment in the detector count,
+\href{https://github.com/GTimG/QuasiRiemannTracker/pull/56}{PR56}.
 \bibitem{incumbent} Zhongpai Gao, \emph{Affine detector counting with asymmetric
-source savings}, accepted $0.874840$ integration,
-\href{https://github.com/GTimG/QuasiRiemannTracker/pull/60}{PR60}.
+source savings}, $0.874840$, \href{https://github.com/GTimG/QuasiRiemannTracker/pull/60}{PR60}.
 \end{thebibliography}
 \end{document}

@@ -1,31 +1,25 @@
-# Directional marked affine source at 0.874836
+# A width-sensitive affine moment bound for Dirichlet L-functions
 
-The four-page [paper](paper.pdf) explains the all-moduli boundary
-`218709/250000 = 0.874836`. [paper.tex](paper.tex) and [status.tex](status.tex)
-are the exact rendered sources. Tectonic 0.15.0 renders them with
-`tectonic --keep-logs paper.tex`.
+The [paper](paper.pdf) gives a four-page mathematical account of the
+all-moduli Dirichlet boundary `218709/250000 = 0.874836`. It explains the
+width-sensitive affine source estimate, numerator valuation coupling,
+fixed accepted LOW incumbent, separate ERROR payment and detector argument.
 
-The closed endpoint passed local Lean checking with only `Classical.choice`,
-`Quot.sound` and `propext`. Clean packaged replay, canonical comparison and
-independent-kernel checks are pending. No tracker admission is claimed.
+[paper.tex](paper.tex) is the complete manuscript source. Render it with
+Tectonic 0.15.0 using `tectonic --keep-logs paper.tex`.
 
-The companion result submission supplies `Candidate.bound` under
-`submissions/gao-directional-affine-20261016/src/Candidate/Main.lean`,
-with finite-order Hecke and zeta consequences as well. This paper-only branch
-publishes the documents; interpret canonical source paths in the result
-submission tree.
+The accompanying result submission supplies `Candidate.bound` under
+`submissions/gao-directional-affine-20261016/src/Candidate/Main.lean`.
+This paper branch contains the documents; canonical source paths refer to
+the result submission tree.
 
-[paper-receipt.json](paper-receipt.json) binds the exact document sources,
-PDF, render log and formula ledgers. Its local endpoint receipts and
-[formula-bindings.json](formula-bindings.json) refer to original module paths
-before the import-only canonical relocation. [canonical-source-bindings.json](canonical-source-bindings.json)
-maps each binding to the exact committed source and records both hashes.
-These document receipts do not certify a clean packaged replay.
+[formula-bindings.json](formula-bindings.json) records the original equation
+bindings. [canonical-source-bindings.json](canonical-source-bindings.json)
+maps them to committed Lean modules and records both source hashes.
+[loss-ledger-verification.json](loss-ledger-verification.json) records exact
+HIGH and ERROR loss calculations. [paper-receipt.json](paper-receipt.json)
+binds the document sources, PDF, render log and formula ledgers.
 
-[loss-ledger-verification.json](loss-ledger-verification.json) records the
-separate HIGH source/raw charges and the ERROR reserve-halving identity.
-The full inequalities are proved in the accompanying Lean source.
-
-Zhongpai Gao, with AI assistance. This work builds on OpenAI, Hailey Collet,
-Akash Levy, timbalud and DaysSky; inherited notices and licenses remain in
-the source. The fixed LOW incumbent is the accepted 0.874840 result from PR60.
+Author: Zhongpai Gao. The paper acknowledges OpenAI, Hailey Collet,
+Akash Levy, timbalud and DaysSky, and records AI assistance in its final
+acknowledgements. Inherited source notices and licenses are retained.
