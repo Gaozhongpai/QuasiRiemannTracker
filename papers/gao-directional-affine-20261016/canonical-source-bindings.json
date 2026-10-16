@@ -1,0 +1,400 @@
+{
+  "scope": "Original paper bindings mapped to exact canonical submission sources. Import paths are relocated; declaration namespaces and proof bodies are retained. This is not a clean-build or admission certificate.",
+  "bindings": [
+    {
+      "topic": "geometry and affine source window",
+      "declarations": [
+        "Target836.Arithmetic",
+        "Target836Moment.InitialAffineAt"
+      ],
+      "original_source": "root/geometry/Target836Geometry.lean",
+      "original_sha256": "77dc96d55907d66d276515aacd9e304a801968e5b789d9f2b839a2c64bffad55",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Target836Geometry.lean",
+      "canonical_sha256": "77dc96d55907d66d276515aacd9e304a801968e5b789d9f2b839a2c64bffad55",
+      "import_changes": []
+    },
+    {
+      "topic": "(3),(4): fixed incumbent and named amplifier",
+      "declarations": [
+        "Named.low_exact",
+        "Named.amp",
+        "Named.total"
+      ],
+      "original_source": "source-provider/SourceProvider/NamedSource.lean",
+      "original_sha256": "1c329eb1bdfe48cc75a6c645a1aa3f8e4a57be071a159527287301b7d951cf24",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/SourceProvider/NamedSource.lean",
+      "canonical_sha256": "7b1bd56ae10c11d0e959305d740e974bf9ce3f3701a24172b6875482c302a237",
+      "import_changes": [
+        {
+          "from": "SourceProvider.HighPayment",
+          "to": "Candidate.Target836.SourceProvider.HighPayment"
+        },
+        {
+          "from": "SourceProvider.AcceptedIncumbent",
+          "to": "Candidate.Target836.SourceProvider.AcceptedIncumbent"
+        }
+      ]
+    },
+    {
+      "topic": "fixed accepted incumbent, independent of target",
+      "declarations": [
+        "accepted_beta",
+        "accepted_incumbent"
+      ],
+      "original_source": "source-provider/SourceProvider/AcceptedIncumbent.lean",
+      "original_sha256": "10463cc2b5eea102f8b235d0f79d0d1748be2ea66a9a452325d8a4bf9fe8404e",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/SourceProvider/AcceptedIncumbent.lean",
+      "canonical_sha256": "4eea7a7a4a005975c3694d1c9a83cfd08292be0e9706ac5b54803fad1e9b71df",
+      "import_changes": [
+        {
+          "from": "Candidate.Main",
+          "to": "Candidate.Cycle63.Verification"
+        }
+      ]
+    },
+    {
+      "topic": "(5),(6): actual numerator facet and moving width",
+      "declarations": [
+        "actual_high_joint_valuation_saving",
+        "marked_width_payment",
+        "tail_width_payment"
+      ],
+      "original_source": "source-provider/SourceProvider/HighPayment.lean",
+      "original_sha256": "ea3ae95e5805200426b7e81d3fa1b3daa38a8fdfe7e27fdb88789151937543aa",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/SourceProvider/HighPayment.lean",
+      "canonical_sha256": "52ebee1e6f2e80761a9fb6f64d29adb033e69541ca2fbdd3f7ca9b4b88292b5e",
+      "import_changes": [
+        {
+          "from": "SourceProvider.ActualValuation",
+          "to": "Candidate.Target836.SourceProvider.ActualValuation"
+        },
+        {
+          "from": "SourceProvider.ScalarValuation",
+          "to": "Candidate.Target836.SourceProvider.ScalarValuation"
+        }
+      ]
+    },
+    {
+      "topic": "actual two-stage supplied width",
+      "declarations": [
+        "eventual_geometry_large_slot_supply_actual"
+      ],
+      "original_source": "source-provider/SourceProvider/WidthSupply.lean",
+      "original_sha256": "dad36783fdf53f8c6bf7c84a35c351462a12e3e065eafdb57e6ed96dbd95c2c7",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/SourceProvider/WidthSupply.lean",
+      "canonical_sha256": "dad36783fdf53f8c6bf7c84a35c351462a12e3e065eafdb57e6ed96dbd95c2c7",
+      "import_changes": []
+    },
+    {
+      "topic": "four HIGH scalar channels and delta growth",
+      "declarations": [
+        "Named.channel_reserves",
+        "Named.high_upper",
+        "Named.high_increase",
+        "Named.rate_lipschitz",
+        "Named.tail_lipschitz"
+      ],
+      "original_source": "source-provider/SourceProvider/NamedSource.lean",
+      "original_sha256": "1c329eb1bdfe48cc75a6c645a1aa3f8e4a57be071a159527287301b7d951cf24",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/SourceProvider/NamedSource.lean",
+      "canonical_sha256": "7b1bd56ae10c11d0e959305d740e974bf9ce3f3701a24172b6875482c302a237",
+      "import_changes": [
+        {
+          "from": "SourceProvider.HighPayment",
+          "to": "Candidate.Target836.SourceProvider.HighPayment"
+        },
+        {
+          "from": "SourceProvider.AcceptedIncumbent",
+          "to": "Candidate.Target836.SourceProvider.AcceptedIncumbent"
+        }
+      ]
+    },
+    {
+      "topic": "separate actual HIGH raw-root allowance",
+      "declarations": [
+        "TargetHigh836.actual_geometry_retained_high_payment"
+      ],
+      "original_source": "marked-count/High836/Pointwise.lean",
+      "original_sha256": "ee3629a2fe5b646a770500ea7dd7672ffa9cdebfa38a61148d1f65fb16ed1431",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/High836/Pointwise.lean",
+      "canonical_sha256": "41567e2a57b38383d289ea3fd7882adf363b13a29b44ca50fb14fa2cc298203f",
+      "import_changes": [
+        {
+          "from": "SourceProvider.HighCoordinates",
+          "to": "Candidate.Target836.SourceProvider.HighCoordinates"
+        },
+        {
+          "from": "SourceProvider.WidthSupply",
+          "to": "Candidate.Target836.SourceProvider.WidthSupply"
+        },
+        {
+          "from": "Marked836.MarkedRate",
+          "to": "Candidate.Target836.Marked836.MarkedRate"
+        }
+      ]
+    },
+    {
+      "topic": "raw-root allowance in literal marked shell",
+      "declarations": [
+        "TargetHigh836.actual_geometry_literal_marked_high_shell"
+      ],
+      "original_source": "marked-count/High836/GeometryMarkedActualShell.lean",
+      "original_sha256": "6844801f5d322f5a0fe76f3a64e2da2ffba72631a08c6b8289cb1df30a4eea19",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/High836/GeometryMarkedActualShell.lean",
+      "canonical_sha256": "41eab9c9576da764eed1f9852ff60000fb16edf4655518cfa15e8a83ee089932",
+      "import_changes": [
+        {
+          "from": "SourceProvider.NamedSource",
+          "to": "Candidate.Target836.SourceProvider.NamedSource"
+        },
+        {
+          "from": "High836.GeometryHighPayment",
+          "to": "Candidate.Target836.High836.GeometryHighPayment"
+        },
+        {
+          "from": "High836.Pointwise",
+          "to": "Candidate.Target836.High836.Pointwise"
+        },
+        {
+          "from": "High836.GeometryMarkedPayment",
+          "to": "Candidate.Target836.High836.GeometryMarkedPayment"
+        }
+      ]
+    },
+    {
+      "topic": "(7),(8): separate ERROR deletion reserve",
+      "declarations": [
+        "Named.errorGap",
+        "Named.first_error_reserve"
+      ],
+      "original_source": "source-provider/SourceProvider/ErrorNamed.lean",
+      "original_sha256": "f30e3b7f45c8dfb5460ad89394a11a6eb2e7b4dc8f0b74b9c84b1ad3a940a445",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/SourceProvider/ErrorNamed.lean",
+      "canonical_sha256": "c747cdcc62febd639275b5f605cd3eff3ad083eefed55d94b49f62ebba532267",
+      "import_changes": [
+        {
+          "from": "SourceProvider.NamedBounds",
+          "to": "Candidate.Target836.SourceProvider.NamedBounds"
+        }
+      ]
+    },
+    {
+      "topic": "all three ERROR branch reserves",
+      "declarations": [
+        "ErrorPhysical.branchReserve",
+        "ErrorPhysical.paid_branch_exponent"
+      ],
+      "original_source": "source-provider/SourceProvider/ErrorPayment.lean",
+      "original_sha256": "e7b678b2d224dc3f18da281ca03835d62cabbd4e42478c91f254365d54d7fe9a",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/SourceProvider/ErrorPayment.lean",
+      "canonical_sha256": "8377b90088548322274c9507a1cb5e20782ec4ca86f79fb123d9513785c793a9",
+      "import_changes": [
+        {
+          "from": "SourceProvider.ErrorPaid",
+          "to": "Candidate.Target836.SourceProvider.ErrorPaid"
+        }
+      ]
+    },
+    {
+      "topic": "ERROR branch loss absorption halves the common reserve",
+      "declarations": [
+        "Target836ErrorPayment.geometry_error_branches_saving"
+      ],
+      "original_source": "marked-count/Error836/GeometryAmplifiedRemainder.lean",
+      "original_sha256": "494f9252cfb870f2548519da06b02df60795a75d6a7601d844cae07097e5352b",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Error836/GeometryAmplifiedRemainder.lean",
+      "canonical_sha256": "f5ae438d0b07f0c83aa0600ef83fcce93ae699d79207f91f581da285db686f46",
+      "import_changes": [
+        {
+          "from": "SourceProvider.ErrorMain",
+          "to": "Candidate.Target836.SourceProvider.ErrorMain"
+        }
+      ]
+    },
+    {
+      "topic": "physical normalized sum saving before allocation/shell losses",
+      "declarations": [
+        "Target836ErrorPayment.actual_error_physical_complete_shell"
+      ],
+      "original_source": "marked-count/Error836/GeometryErrorPhysicalTotal.lean",
+      "original_sha256": "e4be647e86663b296c8166ca099a08b0baf01045b8eda620945a82859690db4d",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Error836/GeometryErrorPhysicalTotal.lean",
+      "canonical_sha256": "5fb48148de181ce999b701d21a02c60d5c15d65355bf6151d8b114982977db6b",
+      "import_changes": [
+        {
+          "from": "SourceProvider.ErrorMain",
+          "to": "Candidate.Target836.SourceProvider.ErrorMain"
+        },
+        {
+          "from": "Error836.GeometryErrorPhysicalPayment",
+          "to": "Candidate.Target836.Error836.GeometryErrorPhysicalPayment"
+        }
+      ]
+    },
+    {
+      "topic": "actual source zero reserve",
+      "declarations": [
+        "GlobalNamed.second_zero_reserve"
+      ],
+      "original_source": "root/source/Source836/GlobalNamed.lean",
+      "original_sha256": "9d3c904892dc5d3dca494d651c99091047f65dde613f12f0141632f0f9bcf83a",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Source836/GlobalNamed.lean",
+      "canonical_sha256": "82523f1bed0e8c72a484cecaa789ba7bbe5d5a78f82b7eb94234686384350725",
+      "import_changes": [
+        {
+          "from": "SourceProvider.NamedBounds",
+          "to": "Candidate.Target836.SourceProvider.NamedBounds"
+        },
+        {
+          "from": "SourceProvider.CellGeometry",
+          "to": "Candidate.Target836.SourceProvider.CellGeometry"
+        },
+        {
+          "from": "Target836Geometry",
+          "to": "Candidate.Target836.Target836Geometry"
+        }
+      ]
+    },
+    {
+      "topic": "(9): new affine count",
+      "declarations": [
+        "Detector836.RNew",
+        "Detector836.tN"
+      ],
+      "original_source": "detector/Detector836/Arith.lean",
+      "original_sha256": "66ec7ccfd98004acd6b5a3eb3a7976a7248e81ff699b0b56773803b9e45d8e5f",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Detector836/Arith.lean",
+      "canonical_sha256": "66ec7ccfd98004acd6b5a3eb3a7976a7248e81ff699b0b56773803b9e45d8e5f",
+      "import_changes": []
+    },
+    {
+      "topic": "three detector branches",
+      "declarations": [
+        "Detector836.count",
+        "Detector836.cutoff"
+      ],
+      "original_source": "detector/Detector836/Schedule.lean",
+      "original_sha256": "1c4c1843f51aee266dd09a6ca84288abac7e8e4d757ade69c0e87523f7af0ccb",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Detector836/Schedule.lean",
+      "canonical_sha256": "4d9c1376bbecb26ef2032124e6790980a5a728df9d23c0a423134c11267a8180",
+      "import_changes": [
+        {
+          "from": "Detector836.Region",
+          "to": "Candidate.Target836.Detector836.Region"
+        }
+      ]
+    },
+    {
+      "topic": "(10): full critical row",
+      "declarations": [
+        "Target836.EndpointArithmetic.rowAt"
+      ],
+      "original_source": "detector/Detector836/EndpointArithmetic.lean",
+      "original_sha256": "d2bbb9c28032f33797eb9efb4b9e3a3ddea9db71537d0a5cd6d9c7c365313ca2",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Detector836/EndpointArithmetic.lean",
+      "canonical_sha256": "6a74f54e358d995d57587aa15ae252150744d8d062f2b70cd601f8626bffb8bc",
+      "import_changes": [
+        {
+          "from": "Target836Geometry",
+          "to": "Candidate.Target836.Target836Geometry"
+        },
+        {
+          "from": "Detector836.Masked",
+          "to": "Candidate.Target836.Detector836.Masked"
+        }
+      ]
+    },
+    {
+      "topic": "whole d intervals and kappa feedback",
+      "declarations": [
+        "Target836.EndpointArithmetic.new_interval_bound"
+      ],
+      "original_source": "detector/Detector836/Feedback.lean",
+      "original_sha256": "fc681ffe31cd866240af814b842d606696889325bfc28297a85a27e9f935bf8f",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Detector836/Feedback.lean",
+      "canonical_sha256": "159020201aadad5b82879d0ee7fefb28acd247defc4f39fa5c61a6ad07ca4627",
+      "import_changes": [
+        {
+          "from": "Detector836.Endpoint",
+          "to": "Candidate.Target836.Detector836.Endpoint"
+        }
+      ]
+    },
+    {
+      "topic": "physical shift and damping",
+      "declarations": [
+        "Target836.Physical",
+        "Target836.Numerator.Capacity"
+      ],
+      "original_source": "root/geometry/Target836Geometry.lean",
+      "original_sha256": "77dc96d55907d66d276515aacd9e304a801968e5b789d9f2b839a2c64bffad55",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Target836Geometry.lean",
+      "canonical_sha256": "77dc96d55907d66d276515aacd9e304a801968e5b789d9f2b839a2c64bffad55",
+      "import_changes": []
+    },
+    {
+      "topic": "literal full geometry budget",
+      "declarations": [
+        "literal_affine_geometry_budget_of_main_error"
+      ],
+      "original_source": "root/source/Source836/GeometryAffinePaidComponents.lean",
+      "original_sha256": "e24f4fa672c060d0592af4f7b8d19da4d419246ada3ca1fe668487e6bbb4f8c2",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Source836/GeometryAffinePaidComponents.lean",
+      "canonical_sha256": "f80aac7b8b46167db565ae05f19a8909b03d5be1c982d305ed126a8b05830612",
+      "import_changes": [
+        {
+          "from": "Source836.GlobalNamed",
+          "to": "Candidate.Target836.Source836.GlobalNamed"
+        },
+        {
+          "from": "Source836.GeometryAffineMainCompletePayment",
+          "to": "Candidate.Target836.Source836.GeometryAffineMainCompletePayment"
+        },
+        {
+          "from": "Error836.GeometryAffineErrorCompletePayment",
+          "to": "Candidate.Target836.Error836.GeometryAffineErrorCompletePayment"
+        },
+        {
+          "from": "Source836.GeometryAffinePaidAssembly",
+          "to": "Candidate.Target836.Source836.GeometryAffinePaidAssembly"
+        }
+      ]
+    },
+    {
+      "topic": "budget to full initial moment",
+      "declarations": [
+        "literal_geometry_initial_affine"
+      ],
+      "original_source": "root/source/Source836/GeometryAffineAssembly.lean",
+      "original_sha256": "3c0a76fa4b16bb70643828ffa722fc6773fee944409aa2c523d4c347c95d22e7",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Source836/GeometryAffineAssembly.lean",
+      "canonical_sha256": "5f8a0e0108c6b55afd75c7a1c25489fb13f7709bb087e301a881a67aa8ba9409",
+      "import_changes": [
+        {
+          "from": "Source836.GlobalNamed",
+          "to": "Candidate.Target836.Source836.GlobalNamed"
+        },
+        {
+          "from": "Source836.InitialHeight",
+          "to": "Candidate.Target836.Source836.InitialHeight"
+        }
+      ]
+    },
+    {
+      "topic": "closed local all-Dirichlet theorem",
+      "declarations": [
+        "Target836Verification.allDirichlet"
+      ],
+      "original_source": "root/assembly/Target836Verification.lean",
+      "original_sha256": "380fd976a84059ec283742d2f0e2eb6b729285fb3d0da7860c92288e8c032760",
+      "canonical_source": "../../submissions/gao-directional-affine-20261016/src/Candidate/Target836/Target836Verification.lean",
+      "canonical_sha256": "cf851498e559491659cd16cbc5d9590462a9cd78c8886d3761281bc20d5302bb",
+      "import_changes": [
+        {
+          "from": "Target836Unconditional",
+          "to": "Candidate.Target836.Target836Unconditional"
+        }
+      ]
+    }
+  ]
+}

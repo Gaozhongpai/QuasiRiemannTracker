@@ -1,0 +1,185 @@
+[
+  {
+    "topic": "geometry and affine source window",
+    "source": "root/geometry/Target836Geometry.lean",
+    "source_sha256": "77dc96d55907d66d276515aacd9e304a801968e5b789d9f2b839a2c64bffad55",
+    "declarations": [
+      "Target836.Arithmetic",
+      "Target836Moment.InitialAffineAt"
+    ]
+  },
+  {
+    "topic": "(3),(4): fixed incumbent and named amplifier",
+    "source": "source-provider/SourceProvider/NamedSource.lean",
+    "source_sha256": "1c329eb1bdfe48cc75a6c645a1aa3f8e4a57be071a159527287301b7d951cf24",
+    "declarations": [
+      "Named.low_exact",
+      "Named.amp",
+      "Named.total"
+    ]
+  },
+  {
+    "topic": "fixed accepted incumbent, independent of target",
+    "source": "source-provider/SourceProvider/AcceptedIncumbent.lean",
+    "source_sha256": "10463cc2b5eea102f8b235d0f79d0d1748be2ea66a9a452325d8a4bf9fe8404e",
+    "declarations": [
+      "accepted_beta",
+      "accepted_incumbent"
+    ]
+  },
+  {
+    "topic": "(5),(6): actual numerator facet and moving width",
+    "source": "source-provider/SourceProvider/HighPayment.lean",
+    "source_sha256": "ea3ae95e5805200426b7e81d3fa1b3daa38a8fdfe7e27fdb88789151937543aa",
+    "declarations": [
+      "actual_high_joint_valuation_saving",
+      "marked_width_payment",
+      "tail_width_payment"
+    ]
+  },
+  {
+    "topic": "actual two-stage supplied width",
+    "source": "source-provider/SourceProvider/WidthSupply.lean",
+    "source_sha256": "dad36783fdf53f8c6bf7c84a35c351462a12e3e065eafdb57e6ed96dbd95c2c7",
+    "declarations": [
+      "eventual_geometry_large_slot_supply_actual"
+    ]
+  },
+  {
+    "topic": "four HIGH scalar channels and delta growth",
+    "source": "source-provider/SourceProvider/NamedSource.lean",
+    "source_sha256": "1c329eb1bdfe48cc75a6c645a1aa3f8e4a57be071a159527287301b7d951cf24",
+    "declarations": [
+      "Named.channel_reserves",
+      "Named.high_upper",
+      "Named.high_increase",
+      "Named.rate_lipschitz",
+      "Named.tail_lipschitz"
+    ]
+  },
+  {
+    "topic": "separate actual HIGH raw-root allowance",
+    "source": "marked-count/High836/Pointwise.lean",
+    "source_sha256": "ee3629a2fe5b646a770500ea7dd7672ffa9cdebfa38a61148d1f65fb16ed1431",
+    "declarations": [
+      "TargetHigh836.actual_geometry_retained_high_payment"
+    ]
+  },
+  {
+    "topic": "raw-root allowance in literal marked shell",
+    "source": "marked-count/High836/GeometryMarkedActualShell.lean",
+    "source_sha256": "6844801f5d322f5a0fe76f3a64e2da2ffba72631a08c6b8289cb1df30a4eea19",
+    "declarations": [
+      "TargetHigh836.actual_geometry_literal_marked_high_shell"
+    ]
+  },
+  {
+    "topic": "(7),(8): separate ERROR deletion reserve",
+    "source": "source-provider/SourceProvider/ErrorNamed.lean",
+    "source_sha256": "f30e3b7f45c8dfb5460ad89394a11a6eb2e7b4dc8f0b74b9c84b1ad3a940a445",
+    "declarations": [
+      "Named.errorGap",
+      "Named.first_error_reserve"
+    ]
+  },
+  {
+    "topic": "all three ERROR branch reserves",
+    "source": "source-provider/SourceProvider/ErrorPayment.lean",
+    "source_sha256": "e7b678b2d224dc3f18da281ca03835d62cabbd4e42478c91f254365d54d7fe9a",
+    "declarations": [
+      "ErrorPhysical.branchReserve",
+      "ErrorPhysical.paid_branch_exponent"
+    ]
+  },
+  {
+    "topic": "ERROR branch loss absorption halves the common reserve",
+    "source": "marked-count/Error836/GeometryAmplifiedRemainder.lean",
+    "source_sha256": "494f9252cfb870f2548519da06b02df60795a75d6a7601d844cae07097e5352b",
+    "declarations": [
+      "Target836ErrorPayment.geometry_error_branches_saving"
+    ]
+  },
+  {
+    "topic": "physical normalized sum saving before allocation/shell losses",
+    "source": "marked-count/Error836/GeometryErrorPhysicalTotal.lean",
+    "source_sha256": "e4be647e86663b296c8166ca099a08b0baf01045b8eda620945a82859690db4d",
+    "declarations": [
+      "Target836ErrorPayment.actual_error_physical_complete_shell"
+    ]
+  },
+  {
+    "topic": "actual source zero reserve",
+    "source": "root/source/Source836/GlobalNamed.lean",
+    "source_sha256": "9d3c904892dc5d3dca494d651c99091047f65dde613f12f0141632f0f9bcf83a",
+    "declarations": [
+      "GlobalNamed.second_zero_reserve"
+    ]
+  },
+  {
+    "topic": "(9): new affine count",
+    "source": "detector/Detector836/Arith.lean",
+    "source_sha256": "66ec7ccfd98004acd6b5a3eb3a7976a7248e81ff699b0b56773803b9e45d8e5f",
+    "declarations": [
+      "Detector836.RNew",
+      "Detector836.tN"
+    ]
+  },
+  {
+    "topic": "three detector branches",
+    "source": "detector/Detector836/Schedule.lean",
+    "source_sha256": "1c4c1843f51aee266dd09a6ca84288abac7e8e4d757ade69c0e87523f7af0ccb",
+    "declarations": [
+      "Detector836.count",
+      "Detector836.cutoff"
+    ]
+  },
+  {
+    "topic": "(10): full critical row",
+    "source": "detector/Detector836/EndpointArithmetic.lean",
+    "source_sha256": "d2bbb9c28032f33797eb9efb4b9e3a3ddea9db71537d0a5cd6d9c7c365313ca2",
+    "declarations": [
+      "Target836.EndpointArithmetic.rowAt"
+    ]
+  },
+  {
+    "topic": "whole d intervals and kappa feedback",
+    "source": "detector/Detector836/Feedback.lean",
+    "source_sha256": "fc681ffe31cd866240af814b842d606696889325bfc28297a85a27e9f935bf8f",
+    "declarations": [
+      "Target836.EndpointArithmetic.new_interval_bound"
+    ]
+  },
+  {
+    "topic": "physical shift and damping",
+    "source": "root/geometry/Target836Geometry.lean",
+    "source_sha256": "77dc96d55907d66d276515aacd9e304a801968e5b789d9f2b839a2c64bffad55",
+    "declarations": [
+      "Target836.Physical",
+      "Target836.Numerator.Capacity"
+    ]
+  },
+  {
+    "topic": "literal full geometry budget",
+    "source": "root/source/Source836/GeometryAffinePaidComponents.lean",
+    "source_sha256": "e24f4fa672c060d0592af4f7b8d19da4d419246ada3ca1fe668487e6bbb4f8c2",
+    "declarations": [
+      "literal_affine_geometry_budget_of_main_error"
+    ]
+  },
+  {
+    "topic": "budget to full initial moment",
+    "source": "root/source/Source836/GeometryAffineAssembly.lean",
+    "source_sha256": "3c0a76fa4b16bb70643828ffa722fc6773fee944409aa2c523d4c347c95d22e7",
+    "declarations": [
+      "literal_geometry_initial_affine"
+    ]
+  },
+  {
+    "topic": "closed local all-Dirichlet theorem",
+    "source": "root/assembly/Target836Verification.lean",
+    "source_sha256": "380fd976a84059ec283742d2f0e2eb6b729285fb3d0da7860c92288e8c032760",
+    "declarations": [
+      "Target836Verification.allDirichlet"
+    ]
+  }
+]

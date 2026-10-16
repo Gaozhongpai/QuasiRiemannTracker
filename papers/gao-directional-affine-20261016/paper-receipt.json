@@ -1,0 +1,76 @@
+{
+  "status": "FOUR_PAGE_LOCAL_CLOSED_ENDPOINT_NOTE",
+  "theta_exact": "218709/250000",
+  "pages": 4,
+  "local_closed_endpoint_checked": true,
+  "clean_packaged_replay_claimed": false,
+  "canonical_comparison_claimed": false,
+  "independent_kernel_acceptance_claimed": false,
+  "tracker_admission_claimed": false,
+  "tex_sha256": "f1f71a1ed9a04d0ae0782a641b404d1a9b4460b9e68b958be47d09eace67bf06",
+  "status_tex_sha256": "5cf6904c42438d3c355b813b2736ff61b69eda08c8016cde8f8cbaf005a1275e",
+  "pdf_sha256": "5db38271e40e8e673e2614abd3e3c014a805f84611e892f03aff79b2f75914dd",
+  "tex_log_sha256": "1153f0eaedab4bd13dfc6910490e5a83877c71691b8bd4975f7542686dd1576e",
+  "formula_bindings_sha256": "2751cf177778c8c8123ee54214c3157ab545b141641fee46cb724f524ba401fc",
+  "loss_ledger_verification_sha256": "070342c5ed4da110e19725e7d8a9a4b3b6721963aba860be78d306fd32ebfdaf",
+  "paper_clarifications": [
+    "Each displayed HIGH channel subtracts 1/20000 plus the separate raw-root allowance 1/200000.",
+    "ERROR common branch reserve 7/30000000 is halved after branch-loss absorption to the normalized physical sum saving 7/60000000, before allocation/shell losses."
+  ],
+  "lean_sources_changed_for_clarification": false,
+  "rendering_engine": "Tectonic 0.15.0",
+  "rendering_engine_sha256": "f0b36e78c13dd75b821984830533f872c9a12c62957e51357bc16e65cdb71013",
+  "rendering_engine_source": "https://github.com/tectonic-typesetting/tectonic/releases/tag/tectonic%400.15.0",
+  "overfull_boxes": false,
+  "private_machine_paths_in_pdf": false,
+  "visual_review": "All four rendered page previews inspected; no clipping, overlap or page-flow defect.",
+  "closed_endpoint_receipts": {
+    "root/assembly/Target836Unconditional.receipt.json": {
+      "receipt_sha256": "8c9534122839ed71f0ece806fe648878393c0cae39a609dd7272db81b5abd655",
+      "source_sha256": "2eed93fc15689dc8c124b4bcbad19408b98c6e245836ffa692dff00fa0736ad0",
+      "olean_sha256": "fb4473faf2a93254449b219704f93c60b84aee708e05280e99c9750fca8e2bb2",
+      "axioms": {
+        "Target836.FinalAssembly.chosen_affine_input": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Target836.FinalAssembly.beta_le_rational": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "root/assembly/Target836Verification.receipt.json": {
+      "receipt_sha256": "520555434b437c50eeec8bb24cefd0132861bc591f70238923a879c406da089a",
+      "source_sha256": "380fd976a84059ec283742d2f0e2eb6b729285fb3d0da7860c92288e8c032760",
+      "olean_sha256": "7e67e4d4fc99d959e805d5a8b430c1f2b51e131aefbe632c703695c1b12a34f7",
+      "axioms": {
+        "Target836Verification.allDirichlet": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Target836Verification.allHecke": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Target836Verification.zeta": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    }
+  },
+  "attribution": [
+    "OpenAI",
+    "Hailey Collet",
+    "Akash Levy",
+    "timbalud",
+    "DaysSky",
+    "Zhongpai Gao (with AI assistance)"
+  ]
+}

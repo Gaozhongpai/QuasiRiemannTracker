@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "source_ledger_charge": "1/20000",
+  "raw_root_charge": "1/200000",
+  "high_reserve": "1/1000000",
+  "endpoint_checks": [
+    {
+      "b": "3401/100000",
+      "delta": "839/1250",
+      "channel": "common",
+      "reserve_after_both_charges_beyond_1e-6": "792641233/192881250000000"
+    },
+    {
+      "b": "3401/100000",
+      "delta": "839/1250",
+      "channel": "marked",
+      "reserve_after_both_charges_beyond_1e-6": "2368393751029/2507456250000000"
+    },
+    {
+      "b": "3401/100000",
+      "delta": "839/1250",
+      "channel": "capped",
+      "reserve_after_both_charges_beyond_1e-6": "883620484495708849/1642504394531250000000"
+    },
+    {
+      "b": "3401/100000",
+      "delta": "839/1250",
+      "channel": "tail",
+      "reserve_after_both_charges_beyond_1e-6": "2779702479924449/2628007031250000000"
+    },
+    {
+      "b": "1/25",
+      "delta": "839/1250",
+      "channel": "common",
+      "reserve_after_both_charges_beyond_1e-6": "1970346599651/6429375000000000"
+    },
+    {
+      "b": "1/25",
+      "delta": "839/1250",
+      "channel": "marked",
+      "reserve_after_both_charges_beyond_1e-6": "118485118210463/83581875000000000"
+    },
+    {
+      "b": "1/25",
+      "delta": "839/1250",
+      "channel": "capped",
+      "reserve_after_both_charges_beyond_1e-6": "91605782835751/17520046875000000000"
+    },
+    {
+      "b": "1/25",
+      "delta": "839/1250",
+      "channel": "tail",
+      "reserve_after_both_charges_beyond_1e-6": "357341989551359/700801875000000000"
+    }
+  ],
+  "full_rectangle_extension": "Affine b dependence; existing high_increase, gamma_bounds, rate_lipschitz and tail_lipschitz at fixed constant subtraction.",
+  "monotonicity_source": "source-provider/SourceProvider/NamedSource.lean",
+  "monotonicity_source_sha256": "1c329eb1bdfe48cc75a6c645a1aa3f8e4a57be071a159527287301b7d951cf24",
+  "error_branch_pre_loss_reserve": "7/30000000",
+  "error_normalized_physical_post_loss_decay": "7/60000000",
+  "lean_sources_changed": false
+}
