@@ -1,0 +1,85 @@
+name: Regional affine source component
+
+on:
+  push:
+    branches: [gao-regional-affine-proof-20261020]
+    paths:
+      - research/gao-recursive-affine-20261020/**
+      - .github/workflows/regional-affine-components.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: regional-affine-components-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  source-component:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    env:
+      QRH_WORKER_THREADS: "4"
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22.17.0
+      - name: Plan the exact component source closure
+        run: python3 research/gao-recursive-affine-20261020/check_component.py --plan-only
+      - name: Restore the pinned shared checking environment
+        uses: ./.github/actions/verifier-cache
+        id: environment
+      - name: Install checking prerequisites
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends meson ninja-build libcap-dev pkg-config zstd libgmp-dev python3-yaml
+      - name: Warm and validate the pinned upstream libraries
+        timeout-minutes: 240
+        run: python3 verifier/actions/setup.py --warm-cache
+      - name: Retain the warmed environment on this fork
+        if: steps.environment.outputs.cache-hit != 'true'
+        continue-on-error: true
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: ${{ steps.environment.outputs.path }}
+          key: ${{ steps.environment.outputs.key }}
+      - name: Restore the immutable signed archive download
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        id: signed-archive
+        with:
+          path: verification/component-cache-download
+          key: regional-affine-signed-5a36a0a56a4425d6f7cbf1e6e303ef2dfbd318f638addd20dc949df787578361
+      - name: Check the actual regional source component
+        timeout-minutes: 110
+        run: python3 research/gao-recursive-affine-20261020/check_component.py
+      - name: Retain the authenticated archive download
+        if: always() && steps.signed-archive.outputs.cache-hit != 'true' && hashFiles('verification/component-cache-download/authenticated.json') != ''
+        continue-on-error: true
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: verification/component-cache-download
+          key: regional-affine-signed-5a36a0a56a4425d6f7cbf1e6e303ef2dfbd318f638addd20dc949df787578361
+      - name: Publish source-check evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: regional-affine-component-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: warn
+          retention-days: 14
+          compression-level: 1
+          path: |
+            verification/component-check/report.json
+            verification/component-check/plan.json
+            verification/component-check/contract.json
+            verification/component-check/cache-status.json
+            verification/component-check/build-inputs.json
+            verification/component-check/compile-progress.json
+            verification/component-check/axioms.log
+            verification/component-check/logs/
+            verification/component-check/candidate-products.tar.gz
