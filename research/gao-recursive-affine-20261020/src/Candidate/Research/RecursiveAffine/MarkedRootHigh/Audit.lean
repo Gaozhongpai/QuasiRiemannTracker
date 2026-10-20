@@ -1,0 +1,10 @@
+import Candidate.Research.RecursiveAffine.MarkedRootHigh.RootUniform
+import Candidate.Research.RecursiveAffine.MarkedRootHigh.RootGiven
+
+#print axioms OAI.SevenEighths.Cycle153RootHigh.actual_geometry_literal_high_shell
+#print axioms OAI.SevenEighths.Cycle153RootHigh.actual_geometry_main_high_canonical_projectors
+#print axioms OAI.SevenEighths.Cycle153RootHigh.actual_main_high_final_small_height
+#print axioms OAI.SevenEighths.Cycle153RootHigh.actual_affine_high_selected_all_height_of_fibers
+#print axioms OAI.SevenEighths.Cycle153RootHigh.affine_main_high_spec_of_receipts
+#print axioms OAI.SevenEighths.Cycle153RootHigh.actual_root_high_uniform_literal_schedule
+#print axioms OAI.SevenEighths.Cycle153RootHigh.actual_root_high_given_all

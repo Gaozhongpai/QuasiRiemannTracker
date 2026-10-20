@@ -9,7 +9,7 @@ if (!rootArg || !projectArg) throw Error("Provide repository and research roots"
 const root = resolve(rootArg), project = resolve(projectArg);
 const { dependencyGraph } = await import(pathToFileURL(join(root, "verifier/submission-dependencies.mjs")));
 const id = "two-level-affine-20261019";
-const target = "Candidate.Research.RecursiveAffine.RegionalMainDriver";
+const target = "Candidate.Research.RecursiveAffine.RegionalComponentAudit";
 const sha = bytes => createHash("sha256").update(bytes).digest("hex");
 const origins = new Map();
 

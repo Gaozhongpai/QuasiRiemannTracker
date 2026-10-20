@@ -1,0 +1,36 @@
+/- Component audit only: actual recursive HIGH source and first/next LOW prefix presentations. -/
+import Candidate.Research.RecursiveAffine.PrefixHighSourceProducer
+import Candidate.Research.RecursiveAffine.NativePrefixPresentation
+import Candidate.Research.RecursiveAffine.PrefixLowPresented
+import Candidate.Research.RecursiveAffine.PrefixHighReturnedNode
+import Candidate.Research.RecursiveAffine.ActualHighNodeProducer
+import Candidate.Research.RecursiveAffine.ActualCarrierReturnedSum
+import Candidate.Research.RecursiveAffine.CoarseActualCarrierBound
+import Candidate.Research.RecursiveAffine.NativeLowHistoryCode
+import Candidate.Research.RecursiveAffine.DepthFamilyCoarseBound
+import Candidate.Research.RecursiveAffine.AttachedFamilyHistory
+import Candidate.Research.RecursiveAffine.LiteralFamilyReturnedBound
+import Candidate.Research.RecursiveAffine.NativeLowFamilyHistory
+import Candidate.Research.RecursiveAffine.NativeLowHistoryFacts
+import Candidate.Research.RecursiveAffine.CorrectedPathPayment
+import Candidate.Research.RecursiveAffine.NativePaidPathNode
+import Candidate.Research.RecursiveAffine.NativeClassPathPayment
+import Candidate.Research.RecursiveAffine.ActualContinuationHighNode
+#print axioms OAI.SevenEighths.Cycle153JointCount.native_class_path_payment
+#print axioms OAI.SevenEighths.Cycle153JointCount.NativePaidPathNode.shiftedOutside_coarse
+#print axioms OAI.SevenEighths.Cycle153JointCount.finite_corrected_physical_path_price
+#print axioms OAI.SevenEighths.Cycle153JointCount.nativeLowHistoryCode_native_gates
+#print axioms OAI.SevenEighths.Cycle153JointCount.nativeLowAttachedFamilyHistory
+#print axioms OAI.SevenEighths.Cycle153JointCount.literal_family_component_returned_bound
+#print axioms OAI.SevenEighths.Cycle153JointCount.attachLiteralFamilyHistory
+#print axioms OAI.SevenEighths.Cycle153RecursiveHighProvider.actual_continuation_high_node
+#print axioms OAI.SevenEighths.Cycle153JointCount.depth_family_component_coarse_bound
+#print axioms OAI.SevenEighths.Cycle153JointCount.bddAbove_whole_depth_family_values
+#print axioms OAI.SevenEighths.Cycle153JointCount.attached_native_low_code_injective
+#print axioms OAI.SevenEighths.Cycle153JointCount.actual_carrier_coarse_returned_bound
+#print axioms OAI.SevenEighths.Cycle153JointCount.actual_carrier_returned_sum
+#print axioms OAI.SevenEighths.Cycle153RecursiveHighProvider.actual_high_node_producer
+#print axioms OAI.SevenEighths.Cycle153RecursiveHighProvider.actual_prefix_high_returned_node
+#print axioms OAI.SevenEighths.Cycle153RecursiveHighProvider.twoLevelHighProducer
+#print axioms OAI.SevenEighths.Cycle153HighProvider.nativePrefixPresentation
+#print axioms OAI.SevenEighths.Cycle153HighProvider.prefix_presented_low_child

@@ -1,0 +1,11 @@
+import Candidate.Research.RecursiveAffine.LowPhysical.NativeOldAllowance
+import Candidate.Research.RecursiveAffine.LowPhysical.ActualFirstMass
+import Candidate.Research.RecursiveAffine.LowPhysical.NativeFirstShells
+import Candidate.Research.RecursiveAffine.LowPhysical.NativeResidualShells
+
+#print axioms OAI.SevenEighths.Cycle153LowPhysical.eventual_actual_old_mass_allowance
+#print axioms OAI.SevenEighths.Cycle153LowPhysical.actual_first_mass_and_old_side
+#print axioms OAI.SevenEighths.Cycle153LowPhysical.actual_old_raw_bin_normalization
+#print axioms OAI.SevenEighths.Cycle153LowPhysical.eventual_actual_old_first_shell_sum
+#print axioms OAI.SevenEighths.Cycle153LowPhysical.actual_residual_shell_forest
+#print axioms OAI.SevenEighths.Cycle153LowPhysical.eventual_actual_residual_shell_forest

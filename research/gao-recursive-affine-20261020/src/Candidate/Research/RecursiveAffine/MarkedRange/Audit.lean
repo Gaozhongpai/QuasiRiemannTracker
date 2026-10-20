@@ -1,0 +1,22 @@
+import Candidate.Research.RecursiveAffine.MarkedRange.VariableSupply
+import Candidate.Research.RecursiveAffine.MarkedRange.CountAssembly
+import Candidate.Research.RecursiveAffine.MarkedRange.WeightedFixedMesh
+import Candidate.Research.RecursiveAffine.MarkedRange.Witnesses
+import Candidate.Research.RecursiveAffine.MarkedRange.WitnessesFixedMesh
+import Candidate.Research.RecursiveAffine.MarkedRange.UnmarkedUniform
+import Candidate.Research.RecursiveAffine.MarkedRange.MaxWeighted
+import Candidate.Research.RecursiveAffine.MarkedRange.WholeBuffered
+import Candidate.Research.RecursiveAffine.MarkedRange.WholePadded
+import Candidate.Research.RecursiveAffine.MarkedRange.WholeRaw
+import Candidate.Research.RecursiveAffine.MarkedRange.LabeledRaw
+import Candidate.Research.RecursiveAffine.MarkedRange.StateRaw
+import Candidate.Research.RecursiveAffine.MarkedRange.LiteralRaw
+import Candidate.Research.RecursiveAffine.MarkedRange.RootBudget
+import Candidate.Research.RecursiveAffine.MarkedRange.RawBudget
+import Candidate.Research.RecursiveAffine.MarkedRange.LiteralMarkedCount
+import Candidate.Research.RecursiveAffine.MarkedRange.UniformMarkedCount
+
+#print axioms OAI.SevenEighths.Cycle153MarkedPlain.actual_geometry_literal_raw_max_fixedmesh
+#print axioms OAI.SevenEighths.Cycle153MarkedPlain.marked_raw_exponent_paid
+#print axioms OAI.SevenEighths.Cycle153MarkedPlain.actual_geometry_literal_marked_count
+#print axioms OAI.SevenEighths.Cycle153MarkedPlain.actual_geometry_uniform_marked_count

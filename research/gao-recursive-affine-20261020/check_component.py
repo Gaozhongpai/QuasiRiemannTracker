@@ -21,7 +21,7 @@ import urllib.error
 import urllib.request
 
 PROJECT = Path(__file__).resolve().parent
-TARGET = "Candidate.Research.RecursiveAffine.RegionalMainDriver"
+TARGET = "Candidate.Research.RecursiveAffine.RegionalComponentAudit"
 DECLARATION = (
     "OAI.SevenEighths.Cycle153RegionalMain."
     "actual_affine_main_parent_component_payment_with_regional_returns"

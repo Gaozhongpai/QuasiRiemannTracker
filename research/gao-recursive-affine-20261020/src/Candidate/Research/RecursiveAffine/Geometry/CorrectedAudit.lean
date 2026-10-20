@@ -1,0 +1,14 @@
+import Candidate.Research.RecursiveAffine.Geometry.Audit
+import Candidate.Research.RecursiveAffine.Geometry.CorrectedCertificate1
+import Candidate.Research.RecursiveAffine.Geometry.CorrectedCertificate2
+import Candidate.Research.RecursiveAffine.Geometry.CorrectedCertificate3
+import Candidate.Research.RecursiveAffine.Geometry.CorrectedCertificate4
+
+#print axioms OAI.SevenEighths.Cycle153Geometry.CorrectedCertificate1.meaning
+#print axioms OAI.SevenEighths.Cycle153Geometry.CorrectedCertificate1.robust_lower
+#print axioms OAI.SevenEighths.Cycle153Geometry.CorrectedCertificate2.meaning
+#print axioms OAI.SevenEighths.Cycle153Geometry.CorrectedCertificate2.robust_lower
+#print axioms OAI.SevenEighths.Cycle153Geometry.CorrectedCertificate3.meaning
+#print axioms OAI.SevenEighths.Cycle153Geometry.CorrectedCertificate3.robust_lower
+#print axioms OAI.SevenEighths.Cycle153Geometry.CorrectedCertificate4.meaning
+#print axioms OAI.SevenEighths.Cycle153Geometry.CorrectedCertificate4.robust_lower
